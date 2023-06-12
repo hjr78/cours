@@ -1,0 +1,28 @@
+/* MEDIA QUERIES permettent de ré-arranger la disposition du site en fonction des tailles des navigateurs en pixels - cf. https://viewportsizer.com/ */
+
+.zone-adaptative{
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+@media (min-width: 768px){
+	.zone-adaptative{
+		width: 750px;
+		background:orange;
+		}
+}
+
+@media (min-width: 992px){
+	.zone-adaptative{
+		width: 970px;
+		background:blue;
+		}
+}
+
+@media (min-width: 1200px){
+	.zone-adaptative{
+		width: 1170px;
+		background: green;
+		}
+}

@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+    /* 
+       margin: 0 auto 0 auto; = haut droite bas gauche 
+       margin: 0;
+       margin: 0 auto 1; haut | horizontal | bas
+    */
+    background-color: antiquewhite;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+p{
+    background-color: mediumaquamarine;
+}
+
+p span{/* sélectionne les span contenus dans le p*/
+    background-color: yellow;
+}
+
+.boite{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(../float/img/image.avif);
+    background-repeat: no-repeat;
+    border: 5px double orchid; /* taille, style, couleur de la bordure*/
+    margin: 2vh;
+    float: left; /* effet flottant, permet de placer des balises côte à côte alors que selon le flux du web santdard les éléments se placent les uns au-dessus dse autres*/
+    transition: margin 1.5s; /* propriétée et durée*/
+}
+
+.boite.hover{
+    /* La nomclasse:hover modifie un affichage au survol de la suoris*/
+    margin-top: 10vh;
+}
+
+.clear{
+    clear: both; /* supprime l'effet flottant */;
+}

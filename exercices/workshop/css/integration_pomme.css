@@ -1,0 +1,104 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: #ddeeaa;
+}
+
+#conteneur{
+    width: 770px; /* =largeur */
+    margin: 0 auto; /* marge automatique qui centre le bloc après l'avoir remonté le plus haut possible dans mon affichage*/
+    text-align: left; 
+    border: 2px solid #aabb44; /* bordure autour de toute la page */
+    background: #fff; /* couleur du fond de mon conteneur */
+}
+
+h1{
+    height: 258px; /* personnaliser la hauteur de mon titre */
+    background: url(../css/img2/apple.jpg) no-repeat left top;
+    margin: 0;
+}
+
+h1 a{
+    /* on donne les mêmes dimensions au lien, chose possible grâce à la propriété display: block; qui transforme le lien en élément de type block, auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi crée */
+
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(../css/img2/title.gif) no-repeat;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    text-indent: -5000px; /* Le text-indent négatiff est fait pour pouvoir cacher le texte hors de la page, ce que nous voulons */
+}
+
+ul{
+    height: 35px; /* On donne une hauteur au menu, correspondant à la tailee de l'image utilisée en fond */
+    margin: 0;
+    padding: 0;
+    background: url(../css/img2/bg_menu.gif) repeat-x 0 -25px; /* on met ensuite l'image de fond avec un décalage de 25pixels vers le haut*/
+    list-style-type: none; /* on cache les puces */
+}
+
+ul li{
+    float: left; /* on rend les li en flottant pour pouvoir les afficher horizontalement */
+    text-align: center; /* on centre le texte */
+}
+
+ul li a{
+    display: block; /* Nous pouvons dimensionner les a grâce à la propriétée display:block; */
+    width: 130px; /* largeur */
+    line-height: 25px; /* hauteur de la ligne*/
+    font-size: 1.2em; /* taille de police */
+    font-weight: bold; /* mise en accentuation gras/bold de la police */
+    letter-spacing: 2px; /* espacements des lettres */
+    text-decoration: none; /* décoration du texte */
+    border-right: 2px solid #dea; /* bordure a droite */
+    color: white;
+}
+
+ul li:hover{
+    background: url(../css/img2/bg_menu.gif) repeat-x 0 0; /* L'image d'arrière plan est répétee uniquement horizontalement */
+}
+
+main{
+    padding: 0 30px 0 100px;
+    background-image: url(img2/bg_page.gif);
+    background-repeat: no-repeat; /* background-image ne prend que l'url, background est beaucoup plus large dans ses réglages */
+    background-position: 15px 15px; /* crée un espace à gauche et à droite de l'image */
+
+}
+
+main h2{ /* Mise en forme du titre de page <h2> */
+    padding-left: 25px; /* on décale le texte en fonction de l'image */
+    line-height: 25px; /* on décale le texte en fonction de l'image avec unn interligne */
+    font-size: 1.4em; /* on précise une taille de police */
+    background: url(../css/img2/little_apple.gif) no-repeat left bottom;
+    color: #9b2; /* couleur du text */ 
+    border-bottom: 1px solid #9b2;
+}
+
+main h3{
+    margin-left: 15px;
+    padding-left: 15px;
+    border-bottom: 1px solid #9b2;
+    border-left: 2px solid #9b2;
+    color: #9b2;
+}
+
+main p{ /* paragraphes plus propres */
+    text-align: justify;
+    text-indent: 2em; /* indentation supérieur à l'état normal pour aérer le tout */
+    line-height: 1.7em; /* espace entre les lignes */
+
+}
+
+footer{ /* Bas de la page */
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}
+

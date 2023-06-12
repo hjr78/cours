@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Lora&family=Pacifico&family=Shadows+Into+Light&display=swap');
+
+ .container{
+    background-color: #273978;
+    width: 50%;
+    margin: 2vh auto;
+    font-family: 'Shadows Into Light';
+    color: #fff;
+ }
+
+ h1{
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 1vh;
+ }
+
+ main{
+    width: 90%;
+    margin: auto;
+
+ }
+
+ figure{
+    float: left;
+    width: 22%;
+    margin: 1vh 2vw;
+ }
+
+ figcaption{
+    font-size: 1.5em;
+    text-align: center;
+ }
+
+ img{
+    width: 200px;
+ }
+
+.clear{
+    clear: both;
+}

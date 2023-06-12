@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <link rel="stylesheet" href="11_transition_iframe.css">
+</head>
+
+<body>
+    <!-- div.left>ul>li*5 -->
+    <div class="left">
+        <ul>
+            <li>Appels</li>
+            <li>SMS</li>
+            <li>Internet</li>
+            <li>International</li>
+            <li>Tarif</li>
+        </ul>
+    </div>
+
+    <!-- div.right>div.change>ul.liste>li*6 -->
+    <div class="right">
+        <div class="change">
+            <ul class="liste">
+                <li id="premium">Premium</li>
+                <li>Illimités</li>
+                <li>50 Go / mois</li>
+                <li>Inclus</li>
+                <li>80 € / mois</li> <!-- alt gr + e -->
+            </ul>
+        </div>
+        <div class="change">
+            <ul>
+                <li id="gold">Gold</li>
+                <li>6 heures / mois</li>
+                <li>20 Go / mois</li>
+                <li>3 € / appel</li>
+                <li>60 € / mois</li>
+            </ul>
+        </div>
+        <div class="change">
+            <ul>
+                <li id="silver">Silver</li>
+                <li>2 heures / mois</li>
+                <li>5 Go / mois</li>
+                <li>1€ / minute</li>
+                <li>30 € / mois</li>
+            </ul>
+        </div>
+    </div><!-- Fin de la classe .right -->
+    <br>
+
+    <div class="clear"></div>
+
+    <!-- google maps-->
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d83908.62587021387!2d1.971290677560529!3d48.91263801954043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1sfr!2sfr!4v1685959005800!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!--youtube-->
+    <iframe  width="560" height="315" src="https://www.youtube.com/embed/UKQcJUj8Bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+
+</html>

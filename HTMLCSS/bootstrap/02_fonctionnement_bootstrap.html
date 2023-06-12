@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- RAPPEL :
+        les 3 balises meta ci-dessus DOIVENT venir en 1er dans le <head>
+        toutes les autres éléments contenu dans <head> viennent APRES
+        -->
+    <title>Base Bootstrap 4</title>
+
+    <!-- CSS Bootstrap en CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS personnel TOUJOURS APRES celui du framework -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Contenu HTML -->
+
+
+    <!--
+    Bootstrap
+
+        BS est un framework CSS, il comporte beaucoup de possibilités. Ici, nous verrons ensemble ses principes de
+        fonctionnement et les bases de son utilisation.
+        A chacun d'aller explorer en détails ce qu'il est possible de faire avec BS.
+
+        BS permet d'avoir un site immédiatement responsive
+        il faut savoir que les sites internet non responsive ne sont plus référencés (référencement naturel) depuis mai 2015
+
+        BS part du principe que chaque élément html de type bloc a 12 colonnes
+    -->
+
+    <div class="container">
+        <h2>Les containers ou blocs principaux</h2>
+    </div>
+
+    <div class="container-fluid c3">
+        <p>.container-fluid</p>
+    </div>
+    <div class="container c4">
+        <p>.container</p>
+    </div>
+
+    <!--
+        la classe .container-fluid de BS (bootstrap) va occuper 100% de la largeur de l'écran
+        si je l'utilise imbriquée dans un autre élément de BS bien entendu ce bloc occupera 100% de la
+        largeur disponible (qui est définie par l'élément parent)
+
+        la classe .container de BS permet de travailler sur une page occupant environ 70% de la
+        largeur de l'écran et dont le contenu est centré (margin: 0 auto)
+
+        par défaut si je travaille sans déclarer de div avec une classe .container ou .container-fluid l'affichage
+        se fait sur 100% de la largeur
+        -->
+
+    <div class="container">
+
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+        <h2>Le système de grille</h2>
+
+        <h3>Les lignes .row</h3>
+
+        <div class="row c1"></div>
+        <div class="row c2"></div>
+        <div class="row c3"></div>
+
+        <!--pour chaque nouveau bloc de code je passe à la ligne avec une div à laquelle je mets la classe .row-->
+
+
+        <h3>Les colonnes .col</h3>
+
+        <div class="row no-gutters">
+            <div class="col c1">
+                une colonne
+            </div>
+            <div class="col c2">
+                une colonne
+            </div>
+            <div class="col c3">
+                une colonne
+            </div>
+        </div>
+
+        <!--
+        pourquoi les 3 colonnes ont l'air de dépasser à droite et à gauche de l'alignement des titres ?
+
+            => les .container .container-fluid de BS ont un padding-left et un padding-right de 15px
+            => les .row de BS ont une margin-left et une margin-right de -15px
+
+            pour les supprimer :
+                => on le supprime maintenant en CSS sur les marges des .row
+                => ou on utilise la classe .no-gutters de BS mais on supprimera les marges ET les paddings en même temps
+
+        -->
+
+        <h3>Pareil avec 5 colonnes par exemple ...</h3>
+
+        <div class="row">
+            <div class="col c1">
+                une colonne
+            </div>
+            <div class="col c2">
+                une colonne
+            </div>
+            <div class="col c3">
+                une colonne
+            </div>
+            <div class="col c4">
+                une colonne
+            </div>
+            <div class="col c5">
+                une colonne
+            </div>
+        </div>
+
+        <h3>Utilisation des media-queries de BS .col-* </h3>
+
+        <!--
+        la classe col-md-1
+        col = colonne
+        ce mot sera invariable
+
+        md = "medium"
+        les lettres correspondent au comportement attendu selon la taille d'écran
+        BS gère les valeurs suivantes - (http://getbootstrap.com/docs/4.1/layout/grid/#grid-options) :
+            .col-* (extra small - téléphone)
+            .col-sm-* (small - tablette)
+            .col-md-* (medium - 15 pouces)
+            .col-lg-* (large - écran large)
+            .col-xl-* (extra large - >= 1200px)
+            ces valeurs sont des 'breakpoints' ou "points d'arrêt" : un peu comme une frontière, dès qu'on la dépasse on change de réglage
+
+        (le comportement de BS est prévu pour être 'mobile first' :
+        càd que les breakpoints sont à lire "à partir de la taille md et plus"
+        en clair si l'écran de l'utilisateur est plus petit que le breakpoint alors l'élément prend 100% de la place disponible)
+
+        le chiffre * correspond au nombre de colonnes prises par l'élément
+        valeurs possibles : de 1 à 12
+        avec bootstrap chaque élément de structure contient par défaut 12 colonnes
+        -->
+
+        <div class="row">
+            <div class="col c2">
+                une colonne
+            </div>
+            <div class="col-6 c3">
+                une colonne
+            </div>
+            <div class="col c4">
+                une colonne
+            </div>
+        </div>
+        <hr>
+
+        <!--ou encore : -->
+        <div class="row">
+            <div class="col c2">col c2</div>
+            <div class="col-10 c3">col-10 c3</div>
+            <div class="col c4">col c4</div>
+        </div>
+        <hr>
+
+        <!--ou encore : -->
+        <div class="row">
+            <div class="col-3 c2">col-3 c2</div>
+            <div class="col c3">col c3</div>
+            <div class="col-7 c4">col-7 c4</div>
+        </div>
+        <hr>
+
+        <!--par contre si je dépasse 12 colonnes j'obtiens un retour à la ligne des colonnes : -->
+        <div class="row">
+            <div class="col-4 c2">col-4 c2</div>
+            <div class="col-6 c3">col-6 c3</div>
+            <div class="col-4 c4">col-4 c4</div>
+        </div>
+
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+        <h2>Les marges .offset</h2>
+
+        <!--
+        si l'on veut mettre en place une marge avec BS, il faut utiliser .offset-
+        les marges sont basées sur les colonnes de la grille de BS
+        par exemple .offset-md-1 veut dire 1 colonne de marge à gauche
+        (les marges se situent toujours à gauche de l'élément avec bootstrap)
+        -->
+
+        <div class="row">
+            <div class="col-md-4 c1">.col-md-4</div>
+            <div class="col-md-4 offset-md-4 c2">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3 c3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3 c4">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 c5">.col-md-6 .offset-md-3</div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5 c2"></div>
+            <div class="col-md-5 offset-md-2 c4"></div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8 c3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur
+                debitis dolorem mollitia, placeat quasi sed tempora. Culpa dolor dolorem, fugiat harum ipsa labore
+                maxime, officia quasi reprehenderit, velit voluptas!</div>
+            <div class="col-md-3 offset-md-1 c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolore
+                doloremque doloribus ea exercitationem impedit, necessitatibus reprehenderit sit tenetur voluptatem. Ad,
+                alias aperiam culpa cumque deleniti doloribus laborum numquam quisquam!</div>
+        </div>
+
+        <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+
+        <h2>Alignement de texte</h2>
+        <div class="row">
+            <div class="col">
+                <p class="text-end c1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis magna turpis, in dapibus dolor
+                    laoreet non. Vivamus nibh tortor, vulputate fermentum vehicula et, tempus ac urna. Morbi eget
+                    sodales quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Integer id felis vulputate, Morbi eget sodales quam. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Integer id felis vulputate,
+                </p>
+                <hr />
+
+                <p class="text-center c2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis magna turpis, in dapibus dolor
+                    laoreet non. Vivamus nibh tortor, vulputate fermentum vehicula et, tempus ac urna. Morbi eget
+                    sodales quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Integer id felis vulputate, Morbi eget sodales quam. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Integer id felis vulputate,
+                </p>
+
+                <hr />
+
+                <p class="text-right c3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis magna turpis, in dapibus dolor
+                    laoreet non. Vivamus nibh tortor, vulputate fermentum vehicula et, tempus ac urna. Morbi eget
+                    sodales quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Integer id felis vulputate, Morbi eget sodales quam. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Integer id felis vulputate,
+                </p>
+                <hr />
+            </div>
+        </div>
+        <!--
+        on evite le texte justifié sur internet  -> pourquoi?
+        http://typographisme.net/post/La-justification-sur-le-web-%3A-usages-et-pr%C3%A9cautions
+        -->
+
+        <!--
+        ici on peut voir que les paragraphes ont des padding-left et padding-right de 15px
+        on l'a vu un peu avant => les éléments de la grille de BS ont des marges et/ou des paddings
+        avec ce code en CSS je n'ai plus de décalage :
+                .col{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+        -->
+
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+        <h3>Imbriquer des blocs de la grille : 'nesting'</h3>
+
+        <div class="row">
+            <div class="col-sm-9 c4">
+                1er niveau : .col-sm-9
+                <div class="row">
+                    <div class="col-8 col-sm-6 c1">
+                        2ème niveau : .col-8 .col-sm-6
+                    </div>
+
+                    <div class="col-4 col-sm-6 c3">
+                        2ème niveau : .col-4 .col-sm-6
+                        <div class="row">
+                            <div class="col-4 c4">3ème</div>
+                            <div class="col-4 c1">3ème</div>
+                            <div class="col-4 c5">3ème</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 c2"></div>
+
+        </div>
+        
+        
+        <div class="col-sm-3 c2">1er niveau : .col-sm-3</div>
+        
+        <hr>
+
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+        <h2>Les couleurs</h2>
+
+        <h3>Les alertes</h3>
+        <div class="alert alert-primary" role="alert">Primary</div>
+        <div class="alert alert-secondary" role="alert">Secondary</div>
+        <div class="alert alert-success" role="alert">succes</div>
+        <div class="alert alert-danger" role="alert">danger</div>
+        <div class="alert alert-warning" role="alert">warning</div>
+        <div class="alert alert-info" role="alert">info</div>
+        <div class="alert alert-light" role="alert">light</div>
+        <div class="alert alert-dark" role="alert">dark</div>
+       
+        <hr>
+
+        <h3>les butons</h3>
+
+        <button type="buton" class="btn btn-primary">Primary</button>
+        <button type="buton" class="btn btn-secondary">Secondary</button>
+        <button type="buton" class="btn btn-success">Success</button>
+        <button type="buton" class="btn btn-danger">Danger</button>
+        <button type="buton" class="btn btn-warning">Warning</button>
+        <button type="buton" class="btn btn-info">Info</button>
+        <button type="buton" class="btn btn-light">Light</button>
+        <button type="buton" class="btn btn-dark">Dark</button>
+
+       <button type="button" class="btn btn-link">Link</button>
+
+        <hr>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+        <hr>
+        
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+        
+        <h2>Les formulaires</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Votre email">
+                <small id="emailHelp" class="form-text text-muted">Nous ne diffusons pas vos coordonnées.</small>
+            </div>
+            <div class="form-group">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" class="form-control" id="mdp" placeholder="Mot de passe">
+            </div>
+        
+            <button type="submit" class="btn btn-outline-info">Envoyer</button>
+        </form>
+
+        <!-- BS permet des mises en forme variées des formulaires-->
+    
+        🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+        
+        <h2>Les tableaux</h2>
+
+        <div class="col-6 m-auto">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Couleur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Kiwi</td>
+                        <td>Tigré</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Yuki</td>
+                        <td>Crème</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+<h2>Le Carousel</h2>
+
+<!-- veiller à prendre des images qui ont la même taille en px-->
+
+
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/00ec9a97-a9b3-469e-afea-a2910460f4c1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/7861f7a4-dafc-4ea2-a24b-9070b9e001dd.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/00ec9a97-a9b3-469e-afea-a2910460f4c1.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
