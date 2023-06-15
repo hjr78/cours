@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="correction_tp2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header>h2.titre{city guide - Paris}+hr+h1.titre{Le Bilan}+hr+nav>ul>(li>a[href=#])*4 -->
+    <header>
+        <h2 class="titre">city guide - Paris</h2>
+        <hr>
+        <h1 class="titre">Le Bilan</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#salle">Salle -</a></li>
+                <li><a href="#service">Service -</a></li>
+                <li><a href="#dressage">Dressage -</a></li>
+                <li><a href="#gout">Gôut</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- section#plat>div.plate>img[src="img/assiette.jpg" alt="assiete"]^div.plate>h3{Exemple de plat}+hr+p{Merlu de ligne}+p{Carrotes nouvelles}+p{Epices douces} -->
+    <section id="plat">
+        <div class="plate"><img src="../consignes/img/assiette.jpg" alt="assiette"></div>
+        <div class="plate">
+            <h3>Exemple de plat</h3>
+            <hr>
+            <p>Merlu de ligne</p>
+            <p>Carottes nouvelles</p>
+            <p>Epices douces</p>
+        </div>
+    </section>
+
+    <!-- section.salle>div.plate>h3{la salle}+hr+p{Ambiance brute, table en bois ancien, béton ciré au sol. La salle lumineuse est très agréable, elle est ouverte sur la cuisine. Au fond de la salle, une jolie table ronde à vue sur une rue sur un petit jardin parisien. À l'entrée un joli
+    sol en carreaux de céramique, quelques plumes de paon et de bien jolies bouteilles anciennes...
+    Le nombre des tables est limité, ce qui rend le restaurant très appréciable, mais aussi très prisé !}+span{La note} -->
+    <section class="salle">
+        <div class="plate">
+            <h3>la salle</h3>
+            <hr>
+            <p>Ambiance brute, table en bois ancien, béton ciré au sol. La salle lumineuse est très agréable, elle est
+                ouverte sur la cuisine. Au fond de la salle, une jolie table ronde à vue sur une rue sur un petit jardin
+                parisien. À l'entrée un joli sol en carreaux de céramique, quelques plumes de paon et de bien jolies
+                bouteilles anciennes... Le nombre des tables est limité, ce qui rend le restaurant très appréciable,
+                mais aussi très prisé !</p>
+            <span>La note
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+        </div>
+
+        <!-- div.plate>img[src="img/resto_01.jpg" alt="chaise"] -->
+        <div class="plate"><img src="../consignes/img/resto_01.jpg" alt="chaise"></div>
+    </section>
+
+    <!-- section.service>div.plate>img[src="img/resto_02.jpg" alt="service"]^div.plate>h3{Le service}+hr+p{Service toujours impeccable.L'ensemble de la table est servi rapidement, la corbeille de pain régulièrèment pleine, les serveurs expliquent le menu avec beaucoup d'attention et ont d'excellents conseils pour marier mets et vins.On reconnaît l'ensemble de l'équipe à ses tabliers bleus.}+span{La note} -->
+
+    <section class="service">
+        <div class="plate"><img src="../consignes/img/resto_02.jpg" alt="service"></div>
+        <div class="plate">
+            <h3>Le service</h3>
+            <hr>
+            <p>Service toujours impeccable.L'ensemble de la table est servi rapidement, la corbeille de pain
+                régulièrèment pleine, les serveurs expliquent le menu avec beaucoup d'attention et ont d'excellents
+                conseils pour marier mets et vins.On reconnaît l'ensemble de l'équipe à ses tabliers bleus.</p>
+            <span>La note
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+        </div>
+    </section>
+
+    <!-- section.dressage>div.plate>h3{Le dressage}+hr+p{Le dressage c'est un peu la marque de fabrique du chef, avec la cuisine bien sûr. Ses plats sont de vrais petits tableaux de maître. Une belle recherche dans les formes et les couleurs très agréables visuellement.}+span{La note}^div.plate>img[src="img/resto_03.jpg" alt="assiette"] -->
+    <section class="dressage">
+        <div class="plate">
+            <h3>Le dressage</h3>
+            <hr>
+            <p>Le dressage c'est un peu la marque de fabrique du chef, avec la cuisine bien sûr. Ses plats sont de vrais
+                petits tableaux de maître. Une belle recherche dans les formes et les couleurs très agréables
+                visuellement.</p>
+            <span>La note
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+        </div>
+        <div class="plate"><img src="../consignes/img/resto_03.jpg" alt="assiette"></div>
+    </section>
+
+    <!-- section#gout>div.plate>img[src="img/resto_04.jpg" alt="gout"]^div.plate>h3{Le goût}+hr+p{Last but not least, le goût.C'est le point le plus important, et tellement bien ajusté ici. Les papilles voltent et virevoltent au rythme des saveurs si justes, des cuissons si parfaitement maîtrisées.}+p{Chaque plat, chaque association, rien n'est laissé au hasard, de l'élément principal à la toute petite feuille d'herbe délicatement posée sur le dessus du plat.Emerveillement des sens et frénésie de créativité sont au rendez-vous.}+span{La note} -->
+    <section class="gout">
+        <div class="plate"><img src="../consignes/img/resto_04.jpg" alt="gout"></div>
+        <div class="plate">
+            <h3>Le goût</h3>
+            <hr>
+            <p>Last but not least, le goût.C'est le point le plus important, et tellement bien ajusté ici. Les papilles
+                voltent et virevoltent au rythme des saveurs si justes, des cuissons si parfaitement maîtrisées.</p>
+            <p>Chaque plat, chaque association, rien n'est laissé au hasard, de l'élément principal à la toute petite
+                feuille d'herbe délicatement posée sur le dessus du plat.Emerveillement des sens et frénésie de
+                créativité sont au rendez-vous.</p>
+            <span>La note
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+        </div>
+    </section>
+
+    <!-- footer>h5.titre{city guide}+hr+h3.titre{Septime}+hr+p{30 rue de Charonne - 75013 Paris}+p{01 43 67 38 29}+em{Lundi soir - Mardi à Vendredi midi & soir} -->
+
+    <footer>
+        <h5 class="titre">city guide</h5>
+        <hr>
+        <h3 class="titre">Septime</h3>
+        <hr>
+        <p>30 rue de Charonne - 75013 Paris</p>
+        <p>01 43 67 38 29</p>
+        <em>Lundi soir - Mardi à Vendredi midi & soir</em>
+    </footer>
+
+
+
+
+</body>
+
+</html>

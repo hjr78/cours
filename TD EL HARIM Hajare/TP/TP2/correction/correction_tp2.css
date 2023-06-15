@@ -1,0 +1,205 @@
+/* Importer des polices */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,700"); 
+
+/* Les balises */
+
+body{
+    font-family: "Cormorant Garamond",serif;
+    background-color: #f6f6f7;
+    width: 1024px;
+    /* width: 80% */
+    margin: 0 auto;
+}
+
+header{
+    width: 50%;
+    margin: 10% auto 5%; /* haut - droit & gauche - bas */
+}
+
+section{
+    width: 100%;
+    display: inline-block;
+}
+
+footer{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20%;
+    font-weight:bold;
+}
+
+footer p{
+    text-transform:uppercase; /*met le texte en majuscule*/
+}
+
+footer em{
+    font-size: 1.5vw;
+    font-style: italic;
+    line-height: 5rem;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /** règle de l'géritage en CSS: L'enfant hérite des  propriétes de son parents */
+}
+
+/* Les chaises */
+
+.titre{
+
+text-transform: uppercase;
+font-style: 3rem;
+letter-spacing: 0.2em;
+text-align: center;
+}
+
+header h2.titre, footer h5.titre {
+    color: #cf884d;
+    font-weight: bold;
+    font-size: 0.65rem;
+}
+
+footer h5.titre{
+    color: black;
+    font-size: 1rem;
+    padding : 3.5rem 0;
+    background-image: url(../consignes/img/plan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plate{
+    margin: 0;
+    width: 49.94%;
+    height: auto; /* ha */
+    display: inline-block; /* dib */
+    vertical-align: middle; /* vam */
+    font-weight: bold; /*fwb*/
+}
+
+.salle .plate:first-child,
+.service .plate:last-child,
+.dressage .plate:first-child,
+.gout .plate:last-child{
+    padding: 3%;
+    width: 43.3%;
+}
+
+.plate img{
+    width: 100%;
+    height: auto;
+}
+
+/* Agencelent du texte */
+
+.plate h3{
+    text-transform: uppercase; /* tt */
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.plate p{
+    font-style:italic;
+    font-size: 1vw;
+}
+
+.plate p:last-of-type{
+    margin-bottom: 5%;
+}
+
+.plate span{
+    color: #fff;
+    background-color: #383838;
+    text-transform: uppercase;
+    font-size: 2vh;
+    padding: 1% 7% 1% 2%; /* haut droite bas gauche */
+    margin-top: 2%;
+}
+
+/* Font-awesome = Icones */
+
+.plate i{
+    font-size: 1vh;
+    margin: 0 0.5%; /* haut-bas droite-gauche */
+}
+
+
+
+/* Les id */
+.gout{
+    margin-bottom: 10%;
+}
+
+/* #plat */
+
+#plat .plate{
+    width: 49%;
+    text-align: right;
+}
+
+#plat .plate:last-of-type{
+    position: relative;
+    right: 15%;
+}
+
+#plat .plate img{
+    border-radius: 50%;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#plat .plate h3{
+    font-style: italic;
+    text-transform: inherit;
+    font-size: 1.5vw;
+}
+
+#plat .plate p{
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
