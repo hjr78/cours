@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap');/* Import de la police Kufam de google font avec différentes graisses */
+
+html,body{
+    margin: 0;/* retrait du margin prédéfinit pour éviter les différences de résultats sur les navigateurs */
+    padding: 0;/* retrait du padding pour les mêmes raisons */
+    font-family: 'Kufam', cursive;/* on définit la police Kufam qu'on à importé comme la police de base du document */
+    text-shadow: 1px 1px 2px black;/* le texte étant blanc sur des couleurs pour lefaire ressortir on utilise text-shadow(x, y, dispersion, couleur) */
+    /* il est recommandé d'utiliser un générateur pour faire ds tests et comprendre le fonctionnement https://www.cssmatic.com/  */
+}
+
+/* ****************HEADER********************** */
+
+header{
+    /*  définit un background couleur au cas ou le  dégradé ne soit pas pris en compte par le navigateur */
+    background: rgb(34, 193, 195); /*  rde green blue possibilité d'opacité avec rgba (red green blue et alpha qui determine l'opacité 0-1) */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45, 253, 149, 0.681) 100%); /* deg fait aller de bas en haut, pourcentage à partir duquel commence le mélange ------- 2eme pourcentage ou fini le melange */
+    display: flex; /* display offfre plein de moyens d'agencer les blocs, il s'avère très utile également pour le responsive, voir aussi grid */
+    justify-content: space-between; /* combiné avec display flex il agence les blocs enfants en les disposant aux extrémites du bloc */
+    height: 90px;    
+}
+
+.gradient{
+    display: inline-block; /* pour pouvoir mettre les blocs les uns à la suite des autres */
+    margin: 10px; /* margin sur l'axe des x et des y */
+    height: 70px; /* fixe la taille pour qu'il fasse la meme que l'image qui est dessus */
+    width: 50px; 
+    background: black;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.76) 0%, rgba(65, 65, 65, 0.198) 20%, rgba(255, 255, 255, 0) 60%);
+    /* dégradé derrière l'image donnant une impression d'ombre pour faire ressortir le logo 100% est le rayon total de la balise, on peut mettre circle à la place d'elipse*/
+}
+
+.gradient img{
+    height: 70px;
+}
+
+h1{
+    display: inline-block; /* pour pouvoir le mettre à côté du logo */
+    font-size: 1.5rem;
+    color: aliceblue;
+    vertical-align: 1.1rem; /* Centre manuellemnt le titre au milieu du bloc (vertica) et bien en face du logo */
+}
+
+nav{
+    display: inline-block; /* pour changer le comportement de la nav et la placer à l'aide du display flex space between */
+}
+
+nav ul{  /* retire le margin et padding par défaut de la liste */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline; /* dispose les items de la iste à la ligne */
+    list-style: none; /* retirer les puces devant les items */
+    margin: auto 2em; /* espace les items */
+}
+
+nav ul li a{
+    text-decoration: none; /* retire le soulignement des liens de la nav */
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500; /* augmente l'epaisseur de la typo à 500 */
+    line-height: 90px; /* met de la hauteur de la ligne à 90px */
+}
+
+/* -----------------------Bandeau Defilant---------------------------- */
+
+.banner{
+    background-color: rgba(34, 193, 195, 1);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow pour Chrome, Safari, Android... */
+    -moz-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow pour mozilla */
+    box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow vert vers le bas */
+    border: 4px double white; /* border de 4px en tout avec double trait blanc */
+    /* compatibilité navigateurs
+    -o- pour Opera
+    -moz- pour Gecko (Mozilla)
+    -webkit- pour Webkit (Chrome, Safari, Android...)
+    -ms- pour Microsoft (Internet Explorer)
+    -khtml- pour KHTML (Konqueror)
+    */
+}/* www.cssmatic/box-shadow */
+
+marquee{/* balise html obsolète */
+    padding: 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px #000000ca;
+    letter-spacing: 2px; /* espace entre les lettres de 2px */
+    word-spacing: 5px; /* espaces entre les mots de 5px */
+    font-size: 1.2rem;
+}
+
+/* ------------------ Articles ------------------------ */
+
+article{
+    width: 70%;/* largeur */
+    margin: 2em auto;/* espacés les uns des autres et placé au centre horizontalement */
+    display: flex;
+    justify-content: space-evenly;/* me des espace égaux entre les éléments enfants */
+    border-radius: 15px; /* bords arrondis */
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px 0px 10px 0px rgba(99,170,166,1); /* ombre de la balise  au centre sur x et y une diffusion de la couleur sur 10 pixels et une ombre nette de 0 */
+}
+
+article:first-of-type{/*cible la première balise de type article*/
+    background: rgb(191,129,148);
+    background: linear-gradient(0deg, rgba(191,129,148,1) 0%, rgba(86,166,241,1) 100%);
+}
+
+article:nth-of-type(2){
+    background: rgb(97,227,194);
+    background: linear-gradient(0deg, rgba(97,227,194,1) 0%, rgba(70,134,195,1) 100%);
+}
+
+article:last-of-type{/* cible la dernière balise de type article */
+    background: rgb(226,132,23);
+    background: linear-gradient(0deg, rgba(226,132,23,1) 0%, rgba(92,144,181,1) 75%); /* pas 100% pour qu'il y ait un peu moins de jaune */
+}
+
+section{
+    width: 50%; /* chaque section prend la moitié de l'article */
+    text-align: center; /* aligne le contenue au centre */
+    margin: 2em;
+}
+
+section .text{
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+article:first-of-type .text{ /* cible la section de texte du premier article */
+    text-align: left;
+}
+
+article:last-of-type .text{ /* cible la section de texte du dernier article */
+    text-align: right;
+}
+
+section .img{
+    margin: auto;
+}
+
+section img{
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    overflow: hidden; /* cache l'image qui dépasse les border radius */
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5em 1em;
+    height: 90px;
+    background: rgb(45, 253, 149);
+    background: linear-gradient(0deg, rgba(45, 253, 149, 0.681) 0%, rgba(34,193,195,1) 100%); /* même qu'en haut mais inversé */
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1); 
+    -moz-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);/* box shadow vert vers le haut*/
+}
+
+footer small{
+    margin: 0;
+    padding: 0 1em;
+    line-height: 90px;
+    color: aliceblue;
+}
+
+.paiement i{
+    font-size: 1.4rem;
+    padding: 0 0.4em;
+    color: aliceblue;
+    line-height: 90px;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul li{
+        margin: auto 1em;
+    }
+    article{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    section.img{
+        margin: 2em auto 0;
+    }
+    footer{
+        height: auto;
+        justify-content: center;
+    }
+    footer small{
+        line-height: 150%;
+    }
+    .paiement i{
+        line-height: 150%;
+    }
+
+}
+
+@media screen and (max-width : 650px){
+    nav{
+        margin-right: 1em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li a{
+        line-height: 150%;
+        font-size: 1rem;
+    }
+    section{
+        width: 100%;/* chaque section prend la moitier de l'article */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
