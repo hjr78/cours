@@ -1,0 +1,138 @@
+    /* ---------Importer ds polices--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+/* Les balises */
+
+body{
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    margin: 0 auto;
+    background-image:  url(../consignes/img/planches.jpg);
+    /* background-repeat: no-repeat;  */
+    display: flex;
+    height: 500px;
+
+}
+
+h1 span {    /*header*/
+  font-size: 40px;
+  display: inline;
+  vertical-align: top;
+  position: relative;
+  font-family: 'Caveat Brush', cursive;
+}
+
+h1 span:after {
+  /*header*/
+  top: 15px;
+  content: "-";
+  position: absolute;
+  left: 0;
+  font-family: 'Caveat Brush', cursive;
+}
+
+
+/*----------------- NAV ------------ */
+nav{ 
+    float: right;
+    text-align: right;
+    margin: 0 15px 0 0;
+    justify-content: space-between;
+}
+
+ul li{
+    display: inline-block;
+    width: 100px;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* ------------FIN NAV-------------------- */
+
+
+/* ----------------SECTION----------------- */
+section{
+    text-align: center;
+    /* width: 50%; */
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section .text{  /* parti texte de la section */
+    border-radius: 15px;
+    color: black;
+    width: 400px;
+    padding: 20px;
+    /* display: flex; */
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+section:first-of-type .text{
+    text-align: left;
+}
+
+section:nth-of-type(2) .text{
+    text-align: right;
+}
+
+section:last-of-type .text{
+    text-align: left;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------IMAGES DE A SECTION---------------------- */
+.image img{
+    margin: 0;
+    width: 900px;
+    display: flex;
+}
+
+.lignebas{
+    background-image: url(../consignes/img/oeuf.jpg);    
+    background-size: cover;
+    height: 900px;
+}
+/* ---------------FIN IMAGE SECTION-------------------- */
+/* ----------------FIN SECTION------------------------- */
+
+
+
+
+/* -----------------FOOTER / PARTI BAS DU SITE------------------- */
+footer{
+    background: url(../consignes/img/motif.jpg);
+    /* background-size: cover; */
+    height: 500px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.logo{
+    display: flex;
+    width: 50px;
+}
+
+/* Fin footer */
