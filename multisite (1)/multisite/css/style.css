@@ -895,3 +895,397 @@ li .fa:hover{
     box-shadow: 5px 10px 10px grey;
     transition: 1s;
 }
+
+/* ********************FIN LISTE********************* */
+
+
+
+/* ************************Lien & Menu*************************** */
+
+/* ***********Styliser les liens**************** */
+
+.ancre{
+    text-align: center;
+}
+
+.ancre a{
+    text-decoration: none;
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #2c3e50;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 0 10px 3px black;
+    font-family: "oswald";
+}
+
+.ancre a:hover{
+    box-shadow: none;
+    transition-duration: 0.5s;
+    text-shadow: 1px 5px 10px grey;
+}
+
+#lien a{
+    text-decoration: none;
+    color: #2980b9;
+    display: inline-block;
+}
+
+#lien a:hover{
+    color: orange;
+}
+
+
+/* ***************id Menu******************* */
+
+#menu nav{
+    background: transparent;
+    border: none;
+}
+
+#menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu nav a{
+    padding: 10px;
+    color: grey;
+    /* text-decoration: none; */
+    background: #ddd;
+    transition: 1s ease-in;
+}
+
+#menu nav a:hover{
+    color: #fff;
+    background: #069;
+}
+
+
+
+/* ************Menu déroulant*********** */
+
+#menuDeroulant{
+    height: 650px;
+}
+
+#menuDeroulant nav{
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li{
+    float: left;
+    list-style: none;
+    width: 20%;
+}
+
+#menuDeroulant ul ul{
+    display: none;
+}
+
+#menuDeroulant nav ul li ul li{
+    border-top: 1px solid #464646;
+    width: 100%;
+}
+
+#menuDeroulant nav li{
+    background: #ccc;
+}
+
+#menuDeroulant nav li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 4px 0 4px;
+}
+
+#menuDeroulant ul{
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+}
+
+#menuDeroulant ul li ul li:hover a{
+    color: red;
+}
+
+/* ***********************FIN LIEN & MENU************************ */
+
+
+
+
+/* ***************************FORMULAIRE************************* */
+
+form{
+    width: 60%;
+    background: #2c3e50;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ecf0f1;
+    border-radius: 10px;
+}
+
+label{
+    margin: 10px 0;
+    width: 50%;
+    display: inline-block;
+}
+
+textarea{
+    resize: none;
+}
+
+/* *********************FIN FORMULAIRE*********************** */
+
+
+
+
+
+
+/* ***********************DEBUT MULTIMEDIA********************** */
+
+.videoFond{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoFond video{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.videoTexte{
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+}
+
+.videoFond p{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.60);
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
+
+iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"]{
+    width: 100%;
+}
+
+.audio{
+    text-align: center;
+}
+
+iframe[allowfullscreen]{
+    width: 100%;
+}
+
+/* ******************Fin Multimédia********************* */
+
+/* *****************Debut ANIMATION****************** */
+
+.infoBulle{
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background: #444;
+    box-shadow: 0 0 50px #222 inset; /* inset permet l'effet à l'intérieur de l'élèment */
+}
+
+.infoBulle p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.infoBulle a{
+    color: #ccc;
+    text-shadow: 0 -2px 0 #000;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.infoBulle a:hover{
+    text-shadow: 0 1px 2px black;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.infoBulle a span{
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: #000;
+    opacity: 0;
+    color: #09c;
+    transform: scale(0) rotateZ(-12deg);
+    transition: .25s;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.infoBulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+
+.infoBulle a span:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    border-bottom: 6px solid rgba(0, 0, 0, .9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+
+/* *******************image graysclae & blur********************* */
+.imgEffets{
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.imgEffets li{
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.imgEffets li:nth-child(3){
+    clear: both;
+}
+
+.imgEffets img{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    transition: .5s cubic-bezier(0, 3, .4, 1);
+    /* cubic-beizer commence par 0 et se termine par 1 puis entre nous mettons nos valeurs */
+}
+
+.imgEffets li:hover img{
+    z-index: 2;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px black;
+}
+
+.imgEffets:hover li:not(:hover) img{
+    filter: grayscale(1) blur(5px);
+}
+
+/******Rotation d'un menu CSS3*******/
+#menuRotate{
+    height: 360px;
+    width: 576px;
+    margin: 100px auto;
+    background: #627878;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+#menuRotate .masque{
+    position: absolute;
+    z-index: 50;
+    width: 585px;
+    height: 135px;
+    top: 0;
+    left: 0;
+    background:linear-gradient(#324040,#627878);
+}
+
+#menuRotate .ombre{
+    position: absolute;
+    z-index: 40;
+    width: 300px;
+    height: 6px;
+    box-shadow: 0px 100px 3px black;
+    border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px; /*rayon horizontaux / Rayon verticaux*/
+    top: 30px;
+    left: 142px;
+}
+
+#menuRotate dl{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 155px;
+    color: #324040;
+    text-align: center;
+    background: #04b3d2;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.7);
+    transform-origin: 50% 120px;
+    animation: bounceOut 0.7s ease-in-out;
+}
+
+#menuRotate dt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    padding-top: 5px;
+
+}
+
+#menuRotate dd{
+    transform: rotate(180deg);
+}
+
+#menuRotate dd a{
+    display: block;
+    height: 24px;
+    padding: 3px 0;
+    color: #324040;
+    text-decoration: none;
+}
+
+#menuRotate dd a:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+#menuRotate dl:hover{
+    transform: rotate(-180deg);
+    animation: bounceIn 0.7s ease-in-out;
+}
+
+@keyframes bounceIn{
+    from{transform:rotate(0deg);}
+    75%{transform:rotate(-200deg);}
+    90%{transform:rotate(-175deg);}
+    to{transform:rotate(-180deg);}
+}
+
+@keyframes bounceOut{
+    from{transform:rotate(0deg);}
+    0%{transform:rotate(-180deg);}
+    10%{transform:rotate(-165deg);}
+    to{transform:rotate(-360deg);}
+}
+/**************FIN ANIMATIONS***************/
