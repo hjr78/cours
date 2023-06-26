@@ -28,3 +28,4 @@ while (nombre != 'quitter') {
         alert("Erreur entrer un nombre correcte");
     }
 }
+

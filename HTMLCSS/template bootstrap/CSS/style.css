@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&family=Texturina:ital,wght@0,700;0,900;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+h1,h2,h3, h4, h5, h6, em, footer p{ /* la virgule = "et" */
+    font-family: 'Texturina', serif;
+}
+
+/* Jumbotron */
+
+.jumbotron{
+    background-image: url(../img/banner-buisnessman.jpg);
+    height: 711px;
+}
+
+.jumbotron div q:first-of-type{
+    font-size: 5em;
+    overflow-y: hidden;
+}
+
+.jumbotron div q:last-of-type{
+    font-size: 1.8em;
+}
+
+.fas.fa-chevron-down{
+    font-size: 500%;
+}
+
+/* PROJECTS */
+
+section{
+    margin: 0;
+    padding: 0!important; /* Le mot clés !important sert à forcer l'appplication d'une règle css. La règle en question sera alors considérée comme prioritaire sur toutes les autres déclarations et le styla sera appliqué à l'élèment concerné */
+}
+
+#projects .card img{
+    height: 100%;
+}
+
+/* COMPANY */
+
+#company .card{
+    border: none; /* enlever les bordures */
+}
+
+/* CONTACT */
+
+#contact select#inputState{
+    height: 45px;
+    box-sizing: border-box;
+}
+
+iframe{
+    bottom: 5px solid #55595c;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+
+footer .fab{
+    font-size: 200%;
+}
+
+footer p{
+    font-size: 120%;
+}
+
+footer a:hover i{
+    color: #df8a13;
+}
+
+.card h5.card-title{
+    overflow-y: hidden;
+}
