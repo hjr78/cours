@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribution des items flexible</title>
+    <style>
+        /*
+            Dans l'exemple précédent, les items flexibles sont distribués horizontalement dans le conteneur, les paragraphes s'affichent les un à côté des autres. Nous pouvons modifier cette affichage avec la propriété "flex-direction".
+
+            Cette propriété peut recevoir des valeurs:
+                - row: les items sont distribués en ligne, c'est la valeur par défaut.
+                flex-direction: row;
+                --------------------------------------------------------------------
+                |     item 1               |        item 2          |     item 3    |
+                --------------------------------------------------------------------
+                - row-reverse: même distribution, mais les items sont affichés dans le sans inverse de leur déclaration dans le code.
+                flex-direction: row-reverse;
+                --------------------------------------------------------------------
+                |     item 3               |        item 2          |     item 1    |
+                --------------------------------------------------------------------
+                - column: les items sont distribués en colonnes, les un sous les autres. 
+                flex-direction: column;
+                -------------
+                |  Item 1    |
+                |____________|
+                |  Item 2    |
+                |____________|
+                |  Item 3    |
+                |____________|
+                - column-reverse: même distribution en colonnes, mais les items sont affichés dans le sans inverse de leur déclaration dans le code.
+                flex-direction: column-reverse;
+                -------------
+                |  Item 3    |
+                |____________|
+                |  Item 2    |
+                |____________|
+                |  Item 1    |
+                |____________|
+
+        */
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+
+</body>
+
+</html>

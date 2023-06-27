@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passage à la ligne et alignement</title>
+    <style>
+        /*
+            Lorsque nous autorisons le passage à la ligne avec la propriété "flex-wrap:wrap;", nous pouvons gérer les alignements des items avec la propriété "align-content". Cette propriété accepte six valeurs: 
+
+            - stretch: Les items enfants occupent tout l'espace disponible dans le conteneur. C'est la valeur par défaut. 
+            - flex-start: Les items se positionnent sur la gauche du conteneur. 
+            - flex-end: Les items se positionnent sur la droite du conteneur. 
+            - center: Les items se positionnent au centre dans l'axe vertical du conteneur. 
+            - space-between: Les items sont justifiés dans l'axe vertical du conteneur, sans espace avant le premier item et après le dernier item. 
+            - space-around: Les items sont justifiés dans l'axe vertical du conteneur par des espaces réguliers. Il y a un demi-espace avant le premier item et après le dernier. 
+        */
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: stretch;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+
+            border: 1px solid #000;
+            height: 200px;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+
+</body>
+
+</html>

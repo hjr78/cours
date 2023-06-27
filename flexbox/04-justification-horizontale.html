@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justification Horizontale</title>
+
+<style>
+    /*
+            Le modèle Flexbox nous permet de gérer la justification horizontale des items dans les lignes. C'est la propriété "justify-content" qui gère cette justification. 
+        */
+    .boite-flexible {
+        display: flex;
+        border: 1px solid #000;
+        /* Alignement « géométrique » */
+
+        /* justify-content: center;     /* Éléments groupés au centre */
+        /* justify-content: start;      /* Éléments groupés au début */
+        /* justify-content: end;        /* Éléments groupés à la fin */
+        /* justify-content: flex-start; /* Éléments flexibles groupés au début */
+        /* justify-content: flex-end;   /* Éléments flexibles groupés à la fin */
+        /* justify-content: left;       /* Éléments groupés à gauche */
+        /* justify-content: right;      /* Éléments groupés à droite */
+
+        /* Alignement normal */
+        /*  justify-content: normal; /*Valeur par défaut*/
+
+        /* Alignement distribué */
+        /* justify-content: space-between; /* Les éléments sont répartis équitablement
+                                                 Le bord du premier est aligné sur le
+                                                 début du conteneur et la fin du dernier
+                                                est alignée sur la fin du conteneur */
+        /* justify-content: space-around;  /* Les éléments sont répartis équitablement
+                                                 À chaque extrémité, entre le bord du
+                                                 conteneur et le premier/dernier élément
+                                                 on a la moitié de l'espace appliqué entre
+                                                 chaque élément */
+        /* justify-content: space-evenly;  /* Les éléments sont répartis équitablement
+                                                 Tous les éléments sont séparés par le même
+                                                 espace */
+
+        /* Alignement pour le dépassement */
+        /* justify-content: safe center;*/
+        /*Cette valeur doit être utilisée avec un mot-clé
+                                                 pour l'alignement. Si le mot-clé choisi indique que le dépassement de l'objet entraîne la perte de donnée, alors l'élément sera plutôt aligné avec la valeur start.*/
+        /* justify-content: unsafe center;*/
+        /*Cette valeur doit être utilisée avec un mot-clé
+                                                   pour l'alignement. Quelle que soit la situation de dépassement ou les contraintes de taille, la valeur utilisée pour l'alignement est respectée.*/
+
+        /* Valeurs globales */
+        /* justify-content: inherit;*/
+        /*Le mot-clé inherit est une valeur qui peut être
+                                              utilisée pour qu'une propriété prenne la valeur calculée de la propriété pour l'élément parent. Cette valeur peut être utilisée sur n'importe quelle propriété CSS,*/
+        /* justify-content: initial;*/
+        /*Le mot-clé initial applique la valeur initiale d'une
+                                             propriété à un élément. La valeur initiale est fournie par le navigateur et peut être utilisée pour chaque propriété CSS. Cette propriété prendra alors la valeur initiale spécifiée pour cette  propriété*/
+        /* justify-content: unset;*/
+        /*Le mot-clé unset correspond à la combinaison des
+                                           mots-clés initial et inherit.*/
+
+    }
+
+    .boite-flexible p {
+        width: auto;
+        margin: 0;
+        background-color: #eee;
+    }
+
+    div {
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+</body>
+</html>

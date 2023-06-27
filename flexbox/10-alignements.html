@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'alignement d'un item</title>
+    <style>
+        /* 
+            Dans les chapitres sur les propriété applicable au conteneur, nous avons vu que la propriété "align-items" permettait de gérer l'alignement de tous les items du conteneur. La propriété "align-self", quand à elle, permet de gerer des exceptions. Elle donne la possibilité de changer l'alignement d'un ou plusieurs items ciblés.
+
+            Nous reprenons la structure de l'exemple précédent en ajoutant une hauteur fixe pour le conteneur ".boite-flexible:height:200px;".Pour les items flexibles, ils sont alignés en haut du conteneur avec "align-items:flex-start". 
+         */
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 1px solid #000;
+            height: 200px;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        /* Maintenant nous allons changer l'alignement pour le deuxième paragraphe: au centre dans l'axe vertical, et pour le quatrème: en bas du conteneur. */
+
+        .boite-flexible #p2 {
+            align-self: center;
+        }
+
+        .boite-flexible #p4 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p id="p1"><strong>Premier</strong>. ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus
+            quis autem quae dolor vero.</p>
+        <p id="p2"><strong>Deuxième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio
+            molestias voluptatibus dignissimos provident alias, libero nihil incidunt facere possimus natus.</p>
+        <p id="p3"><strong>Troisième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="p4"><strong>Quatrième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            doloribus est esse.</p>
+        <p id="p5"><strong>Cinquième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            doloribus est esse illo amet.</p>
+    </div>
+
+</body>
+
+</html>

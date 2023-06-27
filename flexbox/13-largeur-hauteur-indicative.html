@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La largeur ou hauteur indicative</title>
+    <style>
+        /* 
+        La propriété "flex-basis" permet d'indiquer la largeur ou la hauteur souhaitée d'un item flexible, avant l'application éventuelle d'un agrandissment ou d'une réduction. 
+        
+        Les valeurs accepter sont: 
+         - Valeur: La valeur indique la dimension souhaitée.Les unitées sont : px,em,%... ou auto qui est la valeur par défaut. 
+         - Content: La taille de l'élément est automatiquement attribuée, selon la taille du contenu. 
+         Dans cette exemple nous avons un conteneur flexible avec trois items, trois paragraphes enfants. 
+       */
+
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .boite-flexible #p1 {
+            flex-grow: 0;
+            /*Il ne peut pas s'agrandir*/
+            flex-shrink: 0;
+            /*Il ne peut pas se réduir*/
+            flex-basis: 20%;
+            /*La largeur souhaitée avant tout redimenssionnement est de 20%*/
+        }
+
+        .boite-flexible #p2 {
+            flex-grow: 1;
+            /*Il peut  s'agrandir*/
+            flex-shrink: 0;
+            /*Il ne peut pas se réduir*/
+            flex-basis: 30%;
+            /*La largeur souhaitée avant tout redimenssionnement est de 30%*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p id="p1"><strong>Premier</strong>. ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus
+            quis autem quae dolor vero.</p>
+        <p id="p2"><strong>Deuxième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur
+            adipisicing elit.</p>
+        <p id="p3"><strong>Troisième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+</body>
+
+</html>
