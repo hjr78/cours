@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="05_tableau.css">
+</head>
+<body>
+    <!--ouverture du tableau-->
+    <table>
+        <caption>Ventes</caption><!--titre du tableau (cellules fusionnées)-->
+        <thead><!--en tête du tableau-->
+        <tr><!--tr= rang( t= tableau / r= row => rangée) --> 
+        <th>Jour</th> <!-- th= titres ou en têtes (t=tableau / h=head/tête)-->
+        <th>Smartphones</th>
+        <th>Tablettes</th>
+        <th>Portables</th>
+
+        </tr>
+        <tfoot> <!-- tfoot= bas/fin du tableau \!/ les normes W3C metttent la balise tfoot avant celle du corps du tableau tbody-->
+            <tr>
+                <td>Total</td> <!-- td= cellules-->
+                <td>22</td> 
+                <td>24</td>
+                <td>26</td>
+            </tr>
+
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>5</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                  <td>Mardi</td>
+                <td>7</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                  <td>Mercredi</td>
+                <td>8</td>
+                <td>9</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                  <td>Jeudi</td>
+                <td>6</td>
+                <td>4</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                  <td>Vendredi</td>
+                <td>1</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+
+        </tbody>
+        </thead>
+    </table>
+</body>
+</html>

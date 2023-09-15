@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@1,300&display=swap');
+
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    color: #ffffff;
+}
+
+#conteneur{
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background-color: #29347B;
+}
+
+h1{
+    height: 130px;
+    margin: 0;
+    text-align: center;
+}
+
+.div{
+    float: left;
+    height: 10em;
+    width: 10em;
+    margin: 0.2em;
+    text-align: center;
+}
+
+.clear
+{
+     clear: both;
+}
+
+figure{
+    float: left; 
+    width: 22%;
+    margin: 40px;
+}
+
+main{
+    background-color: #29347B;
+    text-align: center;
+    margin: 0 auto;
+    width: 750px;
+    height: 950px;
+    
+}

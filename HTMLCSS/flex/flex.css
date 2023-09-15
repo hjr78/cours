@@ -1,0 +1,81 @@
+h1{
+    background-color: #3a4454;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+h2{
+    background-color: #6b737f;
+    color: white;
+    padding: 0.5em;
+}
+
+h3{
+    background-color: #c2b2b4;
+    color: #610f7f;
+    padding: 0.25em; 
+}
+
+.item1{
+    background-color: lightsalmon;
+    width: 80px;
+    height: 80px;
+}
+
+.item2{
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    flex-basis: 250px; /* définit la taille de base d'un élément, la taille sera en pixel*/
+}
+
+.item3{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    order: 1; /* il change l'ordre d'affichage d'un élément par rapport au flux web(insertion par défaut dans HTML)*/
+}
+
+.contenu_1{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse; /* la valeur par défaut est row, les valeurs possibles (column,row, row-reverse, column-reverse*/
+    justify-content: space-around;/*la valeur par défaut ici c'est flex-start, les valeurs possibles ici(center,flex-end,flex-start,space-between,space-around)*/
+    /*space-between:les éléments sont réparties sur la totalité de la ligne(l'axe principal qui est definit par flex-direction) en cryant des éspaces entre les éléments
+    space-around:les éléments sont réparties sur la totalité de la ligne en cryant des éspaces alentours des éléments
+    center:il va centrer les éléments dans le conteneur*/
+    /*align-items permet d'aligner l'élément sur l'hauteur du conteneur seulement si l'élément n'a pas de height de base(height n'est pas définit) */ 
+    align-items: flex-end; /* la valeur par defaut est en flex-start, les valeurs disponibles(flex-end,flex-start,center,stretch,baseline */
+}
+
+.contenu_2{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex; /* df */
+    flex-direction: row;/* la valeur par défaut est row? les valeurs posssibles(column,row,row-reverse,column-reverse*/
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu_3{
+    border: 1px solid orange;
+    height: 400px;
+    display: flex; /* df */
+    flex-direction: column;/* la valeur par défaut est row? les valeurs posssibles(column,row,row-reverse,column-reverse*/
+    justify-content: space-between;
+}
+
+.contenu_4{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex; /* df */
+    flex-direction: row-reverse;/* la valeur par défaut est row? les valeurs posssibles(column,row,row-reverse,column-reverse*/
+    flex-wrap: nowrap;
+    /*definit est ce que les éléments seront obligatoirement sur une seule ligne ou bien ils ont la possibilités d'être sur plusieurs ligne(cad il ya un retour a la ligne)*/
+    /*
+    flex-flow:<flex-direction> || <flex-wrap>; on peut conbiner les deux valeurs de flex-direction et flex-wrap dans une seule propriétée flex-flow 
+    */
+    /*align-content il fait la même chose que align-item si on a plusieurs lignes sur le même conteneur*/
+}
+

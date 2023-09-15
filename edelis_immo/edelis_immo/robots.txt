@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /lib
+Disallow: /pdf
+Disallow: /confirmation.php

@@ -1,0 +1,45 @@
+.c1, .c2, .c3, .c4
+{
+     height: 10em;
+     width: 10em;
+     border: 0.2em solid black;
+     margin: 0.2em;
+     float: left;
+     text-align: center;
+    }
+    .c1
+    {
+        background-color: aquamarine;
+        border-radius: 50%;
+    }
+    .c2
+    {
+        background-color: darksalmon;
+        border-radius: 20% 40%;
+    }
+    .c3{
+        background-color: cyan;
+        border-radius: 40% 0%;
+    }
+    .c4{
+        background-color: green;
+        border-radius: 10% 20% 30% 40%;
+    }
+
+.empty
+{
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid #fff;
+    margin: 0.2em;
+    float: left;
+}
+
+section div:nth-child(18){
+    background-color: red;
+}
+
+.clear
+{
+     clear: both;
+}

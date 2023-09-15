@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Liste</title>
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./multisite/css/style.css">
+    <meta name="description" content="Les listes en HTML/CSS">
+</head>
+
+<body>
+    <header><!-- Zone du haut, ex: logo, slogan, nav, baniière -->
+
+        <div id="logo">
+
+            <img src="./multisite/img/logo.png" alt="logo">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="text.html">Texte</a>
+            <a href="selecteurs.html">Selecteur</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html" class="active">Liste</a>
+            <a href="liens_menu.html">Liens & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+    </nav>
+    <!-- On utilise que 1 header 1 nav et 1 footer par page -->
+
+    <main>
+        <h2>Listes</h2>
+        <section>
+            <h3>Les listes non-ordonnées - ul</h3>
+            <ul class="fruit">
+                <li><i class="fa fa-hand-spock-o"></i>Orange</li>
+                <li><i class="fa fa-hand-spock-o"></i>Fraise</li>
+                <li><i class="fa fa-hand-spock-o"></i>Poire</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Les listes ordonnées - ol</h3>
+            <ol>
+                <li>HTML/CSS</li>
+                <li>PHP/SQL</li>
+                <li>JS/JQUERY</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Listes imbriquées</h3>
+            <ul class="imbriques">
+                <li class="europe">Europe
+                    <ul>
+                        <li>France</li>
+                        <li>Italie</li>
+                        <li>Espagne</li>
+                    </ul>
+                </li>
+
+                <li class="asie">Asie
+                    <ul>
+                        <li>Chine</li>
+                        <li>Japon</li>
+                        <li>Laos</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Listes de définitions</h3>
+            <dl>
+                <dt>F</dt>
+                <dd>Fox</dd>
+                <dd>France</dd>
+                <dd>Food</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+    
+    
+    </body>
+    
+    </html>

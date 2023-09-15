@@ -1,0 +1,245 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le produit */
+#produit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.produit {
+    flex: 0 0 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.produit img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Styles pour le formulaire de contact */
+#contact-form {
+    padding: 20px;
+}
+
+#contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Styles pour la page de confirmation */
+#confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#confirmation-message p {
+    font-size: 18px;
+}
+
+#confirmation-message a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#confirmation-message a:hover {
+    background-color: #555;
+}
+
+/* style.css */
+
+/* Styles pour le formulaire d'ajout de voyage */
+#ajout-voyage-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+}
+
+#ajout-voyage-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#ajout-voyage-form input[type="text"],
+#ajout-voyage-form textarea,
+#ajout-voyage-form input[type="file"],
+#ajout-voyage-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#ajout-voyage-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ajout-voyage-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a.redirection-ajout-voyage {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+a.redirection-ajout-voyage:hover {
+    background-color: #555;
+    
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulaire-modification {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire-modification label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulaire-modification input[type="text"],
+.formulaire-modification input[type="number"],
+.formulaire-modification textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulaire-modification button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulaire-modification button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.formulaire-modification a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.formulaire-modification a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+

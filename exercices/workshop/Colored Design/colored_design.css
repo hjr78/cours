@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(218, 228, 133);
+}
+
+header{
+    background-color: white;
+    height: 50px;
+    margin: 50em;
+}

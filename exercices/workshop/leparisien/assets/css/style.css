@@ -1,0 +1,99 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle img{
+    width: 250px;
+}
+
+.left .btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border:1px solid grey;
+    background: transparent;
+    font-weight: bold;
+}
+
+.right a{
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid grey;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.right .connexion{
+    border-radius: 30px;
+    border: 1px solid grey;
+    width: 125px;
+    height: 40px;
+    background: transparent;
+    font-weight: bold;
+}
+
+.right .abonner{
+    border-radius: 30px;
+    width: 125px;
+    height: 40px;
+    background-color: rgb(233, 203, 7);
+    border: none;
+    font-weight: bold;
+}
+
+.right{
+    justify-content: space-around;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.navbar li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-solid.fa-globe{
+    color: blue;
+}
+
+.navbar ul li:nth-of-type(3){
+    border-right: 1px solid grey;
+}
+.navbar ul li:nth-of-type(12){
+    border-right: 1px solid grey;
+}
+.navbar ul li:nth-child(13) a{
+   color: grey;
+}
+.navbar ul li:nth-child(14) a{
+    color: grey;
+}
+
+nav a:hover{
+    color: rgb(2, 33, 155);
+}
+
+.navbar ul li:nth-child(13) a:hover {
+    color: rgb(2, 33, 155);
+}
+
+.navbar ul li:nth-child(14) a:hover {
+    color: rgb(2, 33, 155);
+}

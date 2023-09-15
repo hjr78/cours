@@ -1,0 +1,167 @@
+   /* Tous les éléments de la page auront la même police */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* pour initialiser toutes les balises sur tous les navigateurs */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, input, legend, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+body{
+    background: url('../img/fond.png') repeat;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: #fff;
+}
+
+/* .menu ul li:first-child{
+    background-color: violet;
+    
+} */
+/* ----------------------------------------- DEBUT HEADER ----------------------------------------- */
+
+/* ------------------------------------------- DEBUT TOP------------------------------------------- */
+
+.top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    height: 80px;
+}
+
+.boutique{
+    width: 300px;
+    height: 80px;
+}
+
+.boutique h1{
+    font-size: 3rem;
+}
+
+.boutique p{
+    color: rgb(224, 36, 168);
+}
+
+.aide{
+    width: 300px;
+    height: 80px;
+}
+
+.aide h2{
+    font-size: 2rem;
+    color: rgb(103, 220, 255);
+}
+
+.aide #contactAide{
+    background: url('../img/aide.png') no-repeat;
+    display: inline-block;
+    text-align: center;
+    width: 200px
+}
+
+.aide #contactAide p{
+    padding: 0 0 1px 10px;
+    text-align: center;
+}
+
+.aide p{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: rgb(128, 118, 118);
+    padding-left: 25px;
+}
+
+.comptePanier{
+    color: white;
+    width: 300px;
+    height: 80px;
+}
+
+.comptePanier p{
+    background-color: rgb(103, 220, 255);
+}
+
+.panier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(103, 220, 255);
+    margin-top: 2px;
+    height: 60px
+}
+
+/* ------------------------------------------- FIN TOP ------------------------------------------- */
+
+
+
+/* *********************NAV*********************** */
+nav{
+    height: 25px;
+    
+    background: rgb(103, 220, 255);
+
+}
+
+nav li a{
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+
+nav ul li {
+  width: 20%;
+  list-style: none;
+  height: 100%;
+}
+
+nav li:hover{
+    background:  rgb(224, 36, 168);
+    color: white;
+
+}
+
+
+
+/* *********************FIN NAV************************ */
+
+/* ******************Première div******************* */
+
+.corps{
+    display: flex;
+
+}
+
+.paiement{
+    width: 20%;
+}
+
+.qui{
+    width: 55%;
+}
+
+.services{
+    width: 20%;
+    display: flex;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignement vertical dans les lignes</title>
+    <style>
+        /*
+            Nous allons maintenant gérer l'alignement vertical des items dans un contexte d'affichage en ligne. C'est la propriété "align-items" qui gère cet alignement. 
+
+            La propriété "flex-direction:row;" donne l'axe principal horizontal. La propriété "align-items" se fait sur l'axe secondaire qui est à l'opposé de l'axe principal, donc sur l'axe vertical. 
+
+            La propriété "flex-direction:row;" accepte cinq valeurs: 
+
+             - stretch: les items sont agrandis verticalement pour occuper toute la hauteur disponible dans le conteneur. C'est la valeur par défaut. 
+             - flex-start: les items sont placé en haut du conteneur. 
+             - flex-end: les items sont placés en bas du conteneur. 
+             - center: les items sont placés au centre du conteneur. 
+             - baseline: les items sont alignés sur la ligne de base du texte. 
+
+             Pour ces exemples, nous avons une hauteur fixe pour le conteneur, et les paragraphes ont un arrière-plan gris.
+
+        */
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; 
+            /* align-items: baseline; */
+            border: 1px solid #000;
+            height: 150px;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* CSS basic pour les couleurs,.... */
+
+.container > div,
+.container_2 >div,
+.container_3 >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ebf5ee;
+}
+
+.container>div:nth-child(1n),
+.container_2>div:nth-child(1n),
+.container_3>div:nth-child(1n){/* "n" est tous les entiers non négatifs,
+    à partir de 0. */
+    background-color: #4a4063;
+}
+.container>div:nth-child(2n),
+.container_2>div:nth-child(2n),
+.container_3>div:nth-child(2n) {
+    /* "2n" represente les lignes paires d'une tableau
+    "2n+1 represente les lignes impaires d'une tableau" */
+    background-color: #783f8e;
+}
+
+.container>div:nth-child(3n),
+.container_2>div:nth-child(3n),
+.container_3>div:nth-child(3n) {
+  
+    background-color: #bfacc8;
+}
+
+.container>div:nth-child(4n),
+.container_2>div:nth-child(4n),
+.container_3>div:nth-child(4n) {
+
+    background-color: #4f1271;
+}
+
+/* CSS GRID */
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+}
+
+.container_2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+}
+
+
+.container_3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 3px;
+}

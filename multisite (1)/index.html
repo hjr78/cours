@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Permet de définir le langage utilisé et la langue -->
+<html lang="fr">
+<!-- Permet d'indiquer la langue de la page -->
+
+<head><!-- Tête du document,non visible sur le site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page structure</title>
+    <!-- Titre du site apparaissant par exemple sur une recherche google,sur l'onglet ... -->
+    <link rel="stylesheet" href="./multisite/css/style.css">
+    <!-- Reliez le fichier html au fichier CSS(Cascading Style Sheets) -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!--Lien pour les polices utilisé via "Google-Font"-->
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <!-- Lien pour le "Font-Awesome"(icones) ici en local mais d'habitude sur le site cdnjs -->
+    <meta name="description" content="Ma première page en HTML/CSS">
+    <!-- Description sous le titre dans la recherche google -->
+</head>
+
+<body><!-- Corps du document-->
+    <header><!-- Zone du haut, ex:logo, slogan, bannière .... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                </button>
+            </a>
+            <img src="./multisite/img/logo.png" alt="logo">
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html" class="active">Structure</a>
+            <a href="texte.html">Texte</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="lien_menu.html">Lien & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+
+    </nav>
+
+    <main> <!-- conteneur principal (=comme un deuxième body) -->
+        <aside> <!-- conteneur secondaire-->
+
+        </aside>
+
+        <section><!-- Zone de contenu: titre, texte ...-->
+            <div> <!-- Zone supplémentaire de contenu: titre, texte, ...-->
+
+            </div>
+
+            <span> <!-- Zone supplémentaire de contenu-->
+
+            </span>
+
+            <article> <!-- Zone supplémentaire de contenu-->
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Zone de bas, ex: liens administratifs, mentions légales, plan du site, copyright, contact... -->
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    color: #fcf7f8;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 60% 40%;
+    grid-template-areas:/*La grid-template-areas propriété CSS qui vous permet de définir et de nommer les cellules (ou "zones") dans un conteneur de grille CSS.*/
+        "header"
+        "body"
+        "footer";
+}
+
+/* header {
+    grid-area: header;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du header)
+} */
+
+/* .container {
+    grid-area: body;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du .container)
+} */
+
+/* footer {
+    grid-area: footer;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du footer)
+} */
+
+a {
+    text-decoration: none;
+    color: #275dad;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+img {
+    width: 150px;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 1em;
+}
+
+.container {
+    padding: 4em 1em;
+    background: #aba9c3;
+}
+
+footer {
+    background: #275dad;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 2em;
+    color: #ced3dc;
+}
+
+ul li span {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #fcf7f8;
+}
+
+
+/* CSS GRID */
+.container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    padding: 4em 1em;
+}
+
+ul {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+img {
+    width: 150px;
+    justify-self: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 500px) {
+
+    body {
+        grid-template-areas:
+            "header"
+            "footer"
+            "body";
+    }
+
+    ul,
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+}

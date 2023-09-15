@@ -1,0 +1,241 @@
+
+/*----- Polices -----*/
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+/*----- Balises -----*/
+header {
+  /*header*/
+  position: relative;
+  background-image: url('../img/planches.jpg');
+  }
+
+nav {
+  /*header*/
+  top:40px;
+  position: absolute;
+  right: 25px;
+}
+
+nav a {
+  /*header*/
+  margin:30px;
+  font-size:30px;
+  color:black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Caveat Brush', cursive;
+}
+
+h1 {
+  /*header*/
+  font-family: 'Caveat Brush', cursive;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+h1 span {/*header*/
+  font-size: 40px;
+  display: inline;
+  vertical-align: top;
+  position: relative;
+}
+
+h1 span:after {
+  /*header*/
+  top: 15px;
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
+i {
+  /*header*/
+  margin-top: 5vw;
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+}
+
+i#fleche{
+  /*header*/
+  top: 4vw;
+  left: -7vw;
+  width: 3.4em;
+  height: 3.4em;
+  border-right: 0.3em solid #d4276d;
+  border-top: 0.3em solid #d4276d;
+  transform: rotate(134deg);
+}
+
+h2 {
+  /*section*/
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+section .rectRose {
+  /*section*/
+  position: inherit;
+  margin: auto;
+  left: 0;
+  bottom:15px;
+}
+
+section img{
+  /*section*/
+  width: 100%;
+}
+
+section > section {
+  /*cible la/les <section> enfant direct de <section> les autres <section> qui sont des sous-enfants seront ignorées */
+  overflow: hidden;
+  height: 820px;
+  text-align: center;
+}
+
+section p, section h2 {
+  padding: 0 15%;
+}
+
+footer {/*footer*/
+  padding: 150px 0;
+  background-image: url('../img/motif.jpg');
+}
+
+footer>div {
+  display: inline-block;
+  width: 49%;
+}
+
+footer p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding-left: 78px;
+  font-size: 0.9em;
+}
+
+/* ---- class ---- */
+.logoResto {/*header*/
+  position: relative;
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.inlineB {/*header*/
+  display: inline-block;
+}
+.rectRose {/*Class pour les traits Roses*/
+  bottom: 12px;
+  position: absolute;
+  margin: 0;
+  display: block;
+  border: 7px solid #E53F6F;
+  padding: 0 17px;
+  width: 0px;
+  left: 26%;
+}
+
+.pBloque-left, .pBloque-right {/*section*/
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.pBloque-left {/*section*/
+  width: 40%;
+  overflow: visible;
+  position: relative;
+}
+
+.pBloque-right{/*section*/
+  width: 60%;
+}
+
+/* ---- id ---- */
+#logo {/*header*/
+  width: 300px;
+  margin:auto;
+  position: relative;
+  margin-top: 250px;
+  padding-bottom: 250px;
+}
+
+#logo div {/*header*/
+  width: 0;
+  height: 0;
+  border-top: 250px solid #E53F6F;
+  border-left: 250px solid transparent;
+}
+
+#logo img {/*header*/
+  top: -27px;
+  position: absolute;
+  width: 100%;
+}
+
+#story img {/*section*/
+  transform: scaleX(-1);
+  /*La propriété CSS3 transform permet de manipuler un élément HTML sur les axes X et Y (horizontal et vertical)   La fonction scale - transform: scale(x,y);   Cette fonction permet d'agir sur l'échelle (les dimensions) de l'élément. La valeur initiale est 1, tandis que les valeurs supérieures à 1 créent un effet d'agrandissement, et les valeurs inférieures créent un effet de réduction.   Les valeurs peuvent être négatives.   La valeur y est optionnelle et sera égale à la valeur de x si elle est non renseignée,*/
+  width: 125%;
+}
+
+#story h2 {/*section*/
+  font-size: 55px;
+}
+
+#story div {/*section*/
+  transform: scaleX(-1);
+  height: 100%;
+  background-image: url('../img/asperge.jpg');
+  background-size: cover;
+}
+
+#soap {/*section*/
+  height: 900px;
+}
+
+#soap .pBloque-left {/*section*/
+  width: 30%;
+}
+
+#soap .pBloque-right {/*section*/
+  width: 70%;
+}
+
+#local {/*section*/
+  height: 743px;
+}
+
+.txtRose {/*section*/
+  color: #E53F6F;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.pBloque-left > img {/*section*/
+  width: 50%;
+}
+
+#local .pBloque-left img {/*section*/
+  position: relative;
+  top: 70px;
+  z-index: -1;
+}
+
+#eggs {/*section*/
+  width: 100%;
+}
+
+#social ul {/*footer*/
+  float: right;
+  margin-right: 50px;
+}
+
+#social li {/*footer*/
+  display: inline-block;
+  text-align: right;
+  margin:0 5px;
+  color: #E53F6F;
+}

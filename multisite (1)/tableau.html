@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Tableau</title>
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./multisite/css/style.css">
+    <meta name="description" content="Le tableau en HTML/CSS">
+</head>
+
+<body>
+    <header><!-- Zone du haut, ex: logo, slogan, nav, baniière -->
+
+        <div id="logo">
+
+            <img src="./multisite/img/logo.png" alt="logo">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="text.html">Texte</a>
+            <a href="selecteurs.html">Selecteur</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html" >Zoning</a>
+            <a href="tableau.html"class="active">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="liens_menu.html">Liens & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+    </nav>
+    <!-- On utilise que 1 header 1 nav et 1 footer par page -->
+
+    <main>
+        <h2>Tableau</h2>
+        <section class="tableau">
+            <table>
+                <caption><i class="fa fa-plane" aria-hidden="true"></i>Vols Paris Rome</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2023</td>
+                        <td>03/08/2023</td>
+                        <td>04/08/2023</td>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2023</td>
+                        <td>03/08/2023</td>
+                        <td>04/08/2023</td>
+                    </tr>
+                </tfoot>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Air France</th>
+                        <td>Depart 10h - Arrivé 13h</td>
+                        <td>Depart 15h - Arrivé 18h</td>
+                        <td>Depart 17h - Arrivé 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>200€</td>
+                        <td>180€</td>
+                        <td>170€</td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2">ALITALIA</th>
+                        <td>Départ 6h - Arrivé 9h</td>
+                        <td>Départ 8h - Arrivé 11h</td>
+                        <td>Départ 20h - Arrivé 00h</td>
+                    </tr>
+
+                    <tr>
+                        <td>120€</td>
+                        <td>250€</td>
+                        <td>90€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+    
+    
+    </body>
+    
+    </html>

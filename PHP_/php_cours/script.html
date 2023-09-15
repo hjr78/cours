@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titre">Titre de mon site web</h1>
+    <script>
+
+        var i = 0;
+        var colors = ['red', 'blue', 'orange', 'green', 'purple', 'grey'];
+        
+        setInterval(function(){
+            document.getElementById('titre').style.color = colors [i];
+            i++;
+
+            if( i > colors.length ){
+                i = 0;
+            }
+        },1000)
+    </script>
+</body>
+</html>

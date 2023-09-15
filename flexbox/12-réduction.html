@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La réduction des items</title>
+    <style>
+        /* 
+        Sur le même principe que l'agrandissement nous pouvons paramétrer la réduction de la largeur des items flexibles avec la propriété "flex-shrink". 
+
+        Les valeurs disponibles sont: 
+         - 0: N'autorise pas la réduction. 
+         - 1: Autorise la réduction. C'est la valeur par défaut.
+       */
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .boite-flexible #p1,
+        .boite-flexible #p3 {
+            width: 200px;
+        }
+
+        .boite-flexible #p2 {
+            flex-shrink: 1;
+        }
+
+        /*  
+            Sur un écran très large l'affichage obtenu est que la deuxième boîte occupe toute la place disponible selon la largeur de l'écran et la quantité de texte à afficher. 
+            Si nous modifions la valeur  "flex-shrink: 0;" Dans se cas le navigauteur ne réduit pas ça valeur et affiche le contenu dans une seule ligne.
+         */
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p id="p1"><strong>Premier</strong>. ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus
+            quis autem quae dolor vero.</p>
+        <p id="p2"><strong>Deuxième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur
+            adipisicing elit.</p>
+        <p id="p3"><strong>Troisième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+</body>
+
+</html>

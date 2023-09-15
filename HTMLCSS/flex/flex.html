@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+
+<body>
+    <!-- display:flex; s'applique sur le parent (conteneur), il va disposer les enfants de ce conteneur-->
+    <!--Il existe donc deux catégories de propriétés liés à flex: des propriétes pour le parent et des propriétés pour les enfants-->
+
+    <h2>Dislay:Flex,flex-direction,flex-flow,justify-content,align-items,order</h2>
+
+    <!-- flex direction permet de donner le sens d'organisation des éléments par rapport au flux web-->
+
+    <h3>Dislay:Flex,flex-direction:row-reverse,justify-content:space-around; ,align-items:flex:end;</h3>
+    <div class="contenu_1">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+    <h3>display:flex; flex-direction:row-reverse; justify-content:center; align-items:center;</h3>
+    <div class="contenu_2"> <!-- = div.item$*3 -->
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+    <h3>display:flex; flex-direction:column; justify-content: space-between;</h3>
+    <div class="contenu_3">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+    <h3>display:flex; flex-direction:row-reverse;</h3>
+    <div class="contenu_4">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+</body>
+
+</html>

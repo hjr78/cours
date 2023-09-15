@@ -1,0 +1,23 @@
+.c1, .c2, .c3, .c4, .c5{
+    height: 10em;
+    width: 10em;
+    border: 0.1em solid black;
+    margin: 0.2em;
+    float: left;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 120%;
+    color: white;
+}
+
+.c1{
+    background-color: green;
+}
+
+.c2{
+    background-color: #43e07a;
+}
+
+.clear{
+    clear: both;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Zoning</title>
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./multisite/css/style.css">
+    <meta name="description" content="Zoning en HTML/CSS">
+</head>
+
+<body>
+    <header><!-- Zone du haut, ex: logo, slogan, nav, baniière -->
+
+        <div id="logo">
+
+            <img src="./multisite/img/logo.png" alt="logo">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="text.html">Texte</a>
+            <a href="selecteurs.html">Selecteur</a>
+            <a href="image.html">Image</a>
+            <a href="position.html" >Position</a>
+            <a href="zoning.html"class="active">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="liens_menu.html">Liens & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+    </nav>
+    <!-- On utilise que 1 header 1 nav et 1 footer par page -->
+
+    <main>
+        <h2>Zoning</h2>
+        <section> <!-- Zoning 1-->
+            <h3>Zoning 1</h3>
+            <div id="zoning1">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+
+                <aside>
+                    Zone de gauche
+                </aside>
+
+                <section>
+                    Zone de droite
+                </section>
+
+                <div class="clear"></div>
+
+            </div>
+        </section>
+
+        <section>  <!-- Zoning 2-->
+            <h3>Zoning 2</h3>
+            <div id="zoning2">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+
+                <aside>
+                    <p>Zone de gauche<br>ASIDE</p>
+                </aside>
+
+                <section class="middle">
+                    <p>Zone du milieu <br> MIDDLE</p>
+                </section>
+
+                <aside>
+                    <p>Zone de droite <br>ASIDE</p>
+                </aside>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section> <!--Zoning 3-->
+            <h3>Zoning 3</h3>
+
+            <div id="zoning3">
+                <section>
+                    <p>Gauche <br>SECTION</p>
+                </section>
+
+                <section>
+                    <p>Droite <br>SECTION</p>
+                </section>
+
+                <footer>
+                    <p>Bas <br>FOOTER</p>
+                </footer>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section> <!--Zoning 4-->
+            <h3>Zoning 4</h3>
+
+            <div id="zoning4">
+                <header>
+                    <p>HEADER</p>
+                </header>
+                <nav>
+                    <p>NAV</p>
+                </nav>
+                <section>
+                    <p>SECTION</p>
+                </section>
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section><!--Zoning 5-->
+            <h3>Zoning 5</h3>
+            <div id="zoning5">
+                <header>
+                    <p>HEADER</p>
+                </header>
+                <nav>
+                    <p>NAV</p>
+                </nav>
+                <section class="section">
+                    <div class="z1">
+                        <p>Zone 1</p>
+                    </div>
+                    <div class="z2">
+                        <p>Zone 2</p>
+                    </div>
+                    <div class="z3">
+                        <p>Zone 3</p>
+                    </div>
+                    <div class="z4">
+                        <p>Zone 4</p>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section><!--Zoning 6-->
+        <h3>Zoning 6</h3>
+        <div id="zoning6">
+            <header>
+                <div class="haut1">haut 1</div>
+                <div class="haut2">haut 2</div>
+                <div class="haut3">haut 3</div>
+                <div class="clear"></div>
+            </header>
+
+            <nav>Menu</nav>
+
+            <aside>Zone de gauche</aside>
+
+            <section>
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="clear"></div>
+            </section>
+            
+            <section class="slideshow">
+                SlideShow
+            </section>
+            
+            <section>
+                <div class="c">C</div>
+                <div class="d">D</div>
+                <div class="e">E</div>
+                <div class="f">F</div>
+                <div class="clear"></div>
+            </section>
+
+            <footer class="clear">
+                Bas
+            </footer>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+
+
+    </body>
+    
+    </html>

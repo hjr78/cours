@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page position</title>
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./multisite/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./multisite/css/style.css">
+    <meta name="description" content="Les positions en HTML/CSS">
+</head>
+
+<body>
+    <header><!-- Zone du haut, ex: logo, slogan, nav, baniière -->
+
+        <div id="logo">
+
+            <img src="./multisite/img/logo.png" alt="logo">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav><!-- Zone du menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="text.html">Texte</a>
+            <a href="selecteurs.html">Selecteur</a>
+            <a href="image.html">Image</a>
+            <a href="position.html" class="active">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="liens_menu.html">Liens & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Position</h2>
+        <section>
+            <h3>Centrer un élément de type block</h3>
+            <div class="centre"></div>
+        </section>
+
+        <section>
+            <h3>Position absolute</h3>
+            <p>Carré JAUNE ! REGARDE EN HAUT !</p>
+            <div class="obsolute"></div>
+        </section>
+
+        <section>
+            <h3>Position relative</h3>
+            <div class="relative">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Position Pixel</h3>
+            <p>Button retour vers le haut</p>
+            <button type="button">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            </button>
+        </section>
+
+        <section class="p">
+            <h3>Le pourcentage</h3>
+            <div class="trente">30%</div>
+            <div class="cinquante">50%</div>
+            <div class="cent">100%</div>
+        </section>
+
+        <section>
+            <h3>L'attribut Float</h3>
+
+            <div class="float">1</div>
+            <div class="float">2</div>
+            <div class="float">3</div>
+            <div class="float">4</div>
+            <div class="float clear">5</div>
+            <div class="float">6</div>
+            <div class="float">7</div>
+            <div class="float clear">8</div>
+            <div class="float">9</div>
+            <div class="dernier clear">10</div>
+        </section>
+
+        <section>
+            <h3>Exercice sur le Float</h3>
+
+            <div class="zone"></div>
+            <div class="zone1"></div>
+            <div class="zone2"></div>
+            <div class="zone3"></div>
+            <div class="zone4"></div>
+            <div class="zone clear"></div>
+        </section>
+
+        <section>
+            <h3>Flexbox</h3>
+            <!-- Se place en fonction de l'élément parent -->
+            <article class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </article>
+        </section>
+    </main>
+
+    <footer><!-- Zone de bas, ex : liens administratifs, mentions légales, plan du site, copyright, contact... -->
+
+        <small>
+            &copy; 2023 POISSY
+        </small>
+    </footer>
+
+</body>
+
+</html>

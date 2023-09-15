@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier l'ordre d'affichage des items</title>
+    <style>
+        /*
+            La propriété "order" nous permet de modifier l'ordre d'affichage des items flexibles, quel que soit leur ordre de déclaration dans le markup. Par défaut, la valeur de la propriété "order" est 0. Nous pouvons donc attribuer une valeur à n'importe quel item flexible. L'item ayant la valeur la plus grande sera affiché en dernier et inversement l'item ayant la plus petite sera affiché en premier.
+
+            Voici un conteneur ayant cinq items flexibles, cinq paragraphes. Le conteneur et les paragraphes possèdent des bordure et des background color afin de mieux les visualisé.
+        */
+        .boite-flexible {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            border: 1px solid #000;
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        /* Maintenant nous décidonc d'afficher le premier paragraphe en dernière position */
+        #p1 {
+            order: 1;
+        }
+
+        /* Et le 3emme paragraphe en première position */
+        #p2 {
+            order: -1;
+        }
+
+        /* Et le 2emme paragraphe en première position */
+        #p3 {
+            order: 4;
+        }
+
+        /* Et le 4emme paragraphe en première position */
+        #p4 {
+            order: 2;
+        }
+
+        /* p#5 à pour valeur par défaut 0*/
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p id="p1"><strong>Premier</strong>. ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus
+            quis autem quae dolor vero, modi qui veniam, facilis labore, a nobis odio debitis facere error non esse
+            ipsam.</p>
+        <p id="p2"><strong>Deuxième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio
+            molestias voluptatibus dignissimos provident alias, libero nihil incidunt facere possimus natus. Quibusdam
+            autem doloremque provident eum, porro voluptates esse fugit.</p>
+        <p id="p3"><strong>Troisième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            doloribus est esse illo amet cum doloremque mollitia a expedita rerum officiis, accusantium sequi natus
+            omnis dolor libero nulla culpa impedit.</p>
+        <p id="p4"><strong>Quatrième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            doloribus est esse illo amet cum doloremque mollitia a expedita rerum officiis, accusantium sequi natus
+            omnis dolor libero nulla culpa impedit.</p>
+        <p id="p5"><strong>Cinquième</strong>.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            doloribus est esse illo amet cum doloremque mollitia a expedita rerum officiis, accusantium sequi natus
+            omnis dolor libero nulla culpa impedit.</p>
+    </div>
+
+</body>
+
+</html>

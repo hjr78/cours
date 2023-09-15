@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justification Verticale</title>
+    <style>
+        /*
+            Sur le même principe, nous pouvons gérer la justification verticale des items dans un affichage en colonnes défini par "flex-direction:column;". La propriété utilisée est la même: "justify-content", et les valeurs utilisables sont les mêmes que dans l'exemple précédent sur l'axe horizontal. 
+            Voici un exemple pour que ce soit plus parlant.
+        */
+        .boite-flexible {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*Modifier le justify-content pour l'exemple*/
+            border: 1px solid #000;
+            height: 150px;
+
+        }
+
+        .boite-flexible p {
+            margin: 0;
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boite-flexible">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat natus quis autem quae dolor vero,
+            modi qui veniam, facilis labore, a nobis odio debitis facere error non esse ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio molestias voluptatibus dignissimos
+            provident alias, libero nihil incidunt facere possimus natus. Quibusdam autem doloremque provident eum,
+            porro voluptates esse fugit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus est esse illo amet cum
+            doloremque mollitia a expedita rerum officiis, accusantium sequi natus omnis dolor libero nulla culpa
+            impedit.</p>
+    </div>
+
+</body>
+
+</html>

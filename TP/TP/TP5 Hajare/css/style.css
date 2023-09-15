@@ -1,0 +1,111 @@
+/* ********************Header********************** */
+header .debut{
+    background-color: grey;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo{  /*Logo du site*/
+    width: 250px;
+    margin: auto 80px;
+    padding: 45px;
+}
+
+
+.fin{
+    background-color: aliceblue;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* *****************div petites images dans le header**************** */
+.block{
+    width: 60%; 
+}
+
+
+.block ul {
+   display: flex;
+   width: 50px;
+}
+
+
+.block ul li{
+    display: block;
+}
+
+
+.block a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+.block a span{
+    font-weight: bold;
+}
+
+
+img{
+    width: 70px;
+}
+/* ********************fin header****************** */
+
+
+
+
+
+
+/* **************premiere section********** */
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    height: 25px;
+}  
+
+
+.caroussel{ /* Caroussel */
+    width: 1000px;
+    /* margin: 15px auto auto 135px; */
+    
+}
+
+.sol{
+    position: relative;
+    right: 280px;
+}
+.sol img{  
+    width: 255px;
+    
+}
+
+.sol p{
+    background-color: rgb(235, 5, 82);
+    color: white;
+}
+
+/* **************fin première section************ */
+
+
+
+
+
+
+
+
+/* *********************début deuxième section********************** */
+
+.section2{
+   /* display: grid;
+   grid-template-columns: 1fr 1fr 1fr ; */
+    display: block;
+}

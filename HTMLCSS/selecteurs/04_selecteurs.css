@@ -1,0 +1,73 @@
+body{
+    font-size: 25px; /*taille de police : 25 pixels*/
+}
+
+h1{
+    background-color: darkslategray; /*couleur de fond*/
+    color: white; /*couleur du texte*/
+}
+
+section p{
+    color: red; /*tous les <p> à l'intérieur de la balise <section>*/ 
+}
+
+section p:first-child{
+    color: darkviolet; /*1er p dans section*/
+}
+
+section p:last-child{
+    color: lightpink; /*dernier p dans section*/
+}
+
+section p:nth-child(even){/* numero de l'enfant*/
+    color: lightskyblue;
+}
+
+section p:nth-child(odd){/* numero de l'enfant*/
+    /*le p impaires*/
+    color: orchid;
+}
+
+section p:nth-child(3),section p:nth-child(10){
+    /*Les deux selecteurs sépares par une virgule les numéros 3 et 10*/
+    color: orange;
+}
+
+.zone1{
+    color: #dc143c;
+}
+
+.zone2{
+    color: #008080;
+}
+
+.lime{/* CLASS donc avant son nom je mets un . */
+    color: #00ff00;
+}
+
+#zone3{ /* ID donc avant son nom je met un # */
+    background-color: #f5deb3;
+}
+
+#zone:before{ /* rajouter contenu avant l'ID zone 3*/
+    content: "rajouté avant"; /* content est obligatoire, le contenu ne s'affichant pas dans le html=> attention accessibilité, on peut le laisser vide on peut même rajouter des attributs à une balise attr(title)*/
+    background-color: cyan;
+}
+
+#zone3::after{/* rajouter du contenu après l'ID zone3 */
+    content: "rajouté après"; 
+}
+
+li:nth-of-type(2){/* la différence entre nth-child et nth-of-type : https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/ */
+    background-color: darkred;
+    color: white;
+}
+
+.zone4 span{
+    font-size: 40px;
+}
+
+span:not(.lime){
+    font-weight: bold;
+}
+

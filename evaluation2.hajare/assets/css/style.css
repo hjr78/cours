@@ -1,0 +1,250 @@
+
+/* Header */
+
+/* carousel */
+
+
+.carousel{
+position: absolute;
+}
+
+/* haut du header */
+
+/* nvbar burger */
+
+.menuHaut{
+position: relative;
+}
+
+.menuHaut .navbar{
+float: right;
+}
+
+.list ul {
+background-color: white;
+}
+
+.list ul li{
+list-style: none;
+margin: 15px;
+}
+
+.list ul li a{
+text-decoration: none;
+color: grey;
+}
+
+.clear{
+clear: both;
+}
+
+.navbar-toggler{
+border: 1px solid white;
+z-index: 2;
+}
+
+.navbar-toggler:focus {
+box-shadow: none;
+}
+
+/* fin navbar burger */
+
+
+/* TItre du Haut */
+header h1, header h4{
+color: white;
+text-align: center;
+}
+
+
+/* Navbar */
+
+.container{
+    position: relative;
+    top: 400px;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .btn:last-child{
+background-color: rgba(17, 200, 41, 0.63);
+border: none;
+border-radius: 0;
+}
+
+
+/* fin header */
+
+/* debut body */
+
+
+.premiereligne{
+    margin-top: 500px;
+    margin-left: 1450px;
+}
+
+#carousel1{
+margin-top: 140px;
+display: flex;
+width: 700px;
+}
+
+.texte2{
+    width: 700px;
+}
+
+.container2{
+    margin-left: 270px;
+}
+
+
+
+
+
+
+
+#carousel2{
+margin-top: 480px;
+display: flex;
+width: 700px;
+}
+
+.texte{
+    width: 700px;
+    margin: auto;
+}
+
+.container3{
+    margin-left: 270px;
+}
+
+
+
+
+
+
+#carousel3{
+margin-top: 840px;
+display: flex;
+width: 700px;
+}
+
+.texte3{
+    width: 700px;
+    margin: auto;
+}
+
+.container4{
+    margin-left: 270px;
+}
+
+
+
+
+#carousel4{
+margin-top: 1180px;
+display: flex;
+width: 700px;
+}
+
+.texte4{
+    width: 700px;
+    margin: auto;
+}
+
+.container5{
+    margin-left: 270px;
+}
+
+
+/* footer */
+
+.bas img{
+    width: 150px;
+    margin-top: 1500px;
+}
+
+.bas{
+ display: flex;   
+ margin-left: 800px;
+}
+
+.textebas{
+    margin-top: 1500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+.btn-group {
+display: flex;
+flex-direction: column;
+}
+.btn{
+width: 400px;
+}
+.container{
+display:flex;
+
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.navbar .btn:last-child {
+width: 100%;
+}
+.btn-group{
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+.btn{
+margin: 0 3px;
+}
+
+input, .btn{
+width: 150px;
+}
+
+}

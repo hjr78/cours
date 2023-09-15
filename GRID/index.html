@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>La grille ou Grid CSS</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+
+            <a href="#logo">
+
+                <button type="button">
+
+                    <i class="fa-solid fa-circle-arrow-up"></i>
+
+                </button>
+
+            </a>
+
+            <img src="./img/grid2.png" alt="la grille css">
+        </div>
+
+        <h1>La grille CSS ou "CSS Grid"</h1>
+        <img src="img/grid2.png" alt="la grille css">
+    </header>
+
+
+    <nav class="activ_nav">
+        <!-- Zone du menu, les liens pour naviguer sur le site -->
+        <a href="index.html">La grille</a>
+        <a href="fractions.html"> Fractions</a>
+        <a href="zoning.html">Zoning</a>
+    </nav>
+
+    <main>
+        <p>Le système de grille CSS s'appuie sur les LIGNES verticales et horizontales qui dessinent ma grille, pas
+            sur les rangs ni les colonnes !</p>
+        <div class="wrapper">
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+            <div class="vide"></div>
+        </div>
+
+        <hr>
+
+        <p>Le système de grille CSS permet de positionner des éléments HTML
+        <ul>
+            <li>en colonnes :
+                <em>grid-template-columns: 100px 100px 100px; </em>
+            </li>
+            <li>et en rangs :
+                <em>grid-template-rows: 100px 100px 100px;
+                </em>
+            </li>
+        </ul>
+        </p>
+        <div class="wrapper0">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+
+        <hr>
+
+        <p>Les cellules de la grille CSS peuvent occuper plusieurs rangs ou colonnes : on compte les LIGNES de la
+            grille
+            pour ça !</p>
+        <div class="wrapper1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div id="img">4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <hr>
+
+        <p>Un autre exemple avec une mise en page complète ^^</p>
+        <div class="wrapper2">
+            <div id="gauche">G</div>
+            <div id="cd">0</div>
+            <div class="c1">1</div>
+            <div class="c2">2</div>
+            <div class="c3">3</div>
+            <div class="c4">4</div>
+            <div class="c5">5</div>
+            <div id="cg">6</div>
+            <div id="droite">D</div>
+        </div>
+
+        <hr>
+    </main>
+
+    <!-- <p>€</p>
+                &euro;
+        
+                <div class="pixelart-to-css"></div>
+                <div class="pixelart-to-css2"></div> -->
+    <script src="js/activ.js"></script>
+
+</body>
+
+</html>

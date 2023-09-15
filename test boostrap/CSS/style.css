@@ -1,0 +1,33 @@
+/* nav .bn{
+    background-color: red;
+}
+
+.navbar-brand{
+    color: yellow;
+    font-size: 50px;
+}
+
+/* .navbar-brand:hover{
+    color: blueviolet;
+} */
+
+.carousel1 {
+    /* width: 100%; */
+    margin-top: 50px;
+    margin-left: 50px;
+    margin: 50px 0 0 50px;
+}
+
+.carousel1 img {
+    /* width: 700px; */
+    height: 800px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.slide{
+    width: 50%;
+    height:800px;
+}

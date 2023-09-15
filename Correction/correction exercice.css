@@ -1,0 +1,133 @@
+html,/* exemples balises */
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* Aligne la ligne de base de l'élément avec la ligne de base de son parent  */
+    text-align: center;
+    color: #333;
+}
+
+#conteneur{
+    height: 600px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+header{
+    background-color: #ff5555;
+    width: 800px;
+    height: 70px;
+    line-height: 530px;
+}
+
+.droite{
+    background-color: #5585ff;
+    width: 150px;
+    height: 530px;
+    float: left;
+    line-height: 530px;
+}
+
+.milieu{
+    border: 1px solid;
+    float: left;
+    height: 448px;
+    width: 98px;
+}
+
+.bas{
+    background-color: gold;
+    bottom: 80px;
+    height: 80px;
+    line-height: 80px;
+    left: 150px;
+    position: relative;/* L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left */
+    width: 500px;
+}
+
+.clear{
+    clear: both;
+}

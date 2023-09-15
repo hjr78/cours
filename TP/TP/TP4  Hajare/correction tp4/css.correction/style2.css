@@ -1,0 +1,332 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+*{ /* * = tout dans le html*/
+    box-sizing: border-box; /* pour garder la même taille */
+}
+
+body{
+    font-family: Arial;
+    background-image: url(.);
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto; /* pour centrer la page dans le navigateur */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header_haut{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.menu_haut{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.menu_haut a{
+    /* selectionner les a qui sont sous la classe menu_haut, autrement selectionner a en tant que enfant indirect de menu_haut */
+    text-decoration: none;
+    text-transform: capitalize; /* capitalize mettre en majuscule le premier caractère de chaque mot */
+    color: #fff;
+}
+
+.menu_haut li{
+    background-color: rgb(103, 220, 255);
+    padding: 12px 20px;
+    width: 16.67%;
+    text-align: center;
+}
+
+ul.menu_haut li:first-child{
+    background-color: rgb(255, 113, 198);
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    width: 50%;
+    padding: 3px 15px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.paiement, .service{
+    width: 25%;
+    padding: 3px 15px;
+}
+
+.paiement h3, .about h3, .service h3{
+    color: rgb(103, 220, 255);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.main_info{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p,span{
+    font-size: 13px;
+}
+
+.livraison span, .echange span{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.paiement img{
+    margin-top: 25px;
+}
+
+.echange img{
+    margin-top: 7px;
+}
+
+.livraison, .echange{
+    display: flex;
+    align-items: center;
+}
+
+.livraison{
+    margin-bottom: 20px;
+}
+
+.contact h3{
+    color: rgb(103, 220, 255);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.tel{
+    font-weight: bold;
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    color: rgb(103, 220, 255);
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-right: 23px;
+}
+
+.horaire{
+    font-style: italic;
+    color: lightgrey;
+}
+
+.compte h5{
+    text-align: center;
+    color: #fff;
+    background-color: rgb(103, 220, 255);
+    padding: 3px 10px;
+    font-weight: lighter;
+}
+
+.panier{
+    display: flex;
+    align-items: center;
+    background-color: rgb(103, 220, 255);
+    justify-content: space-around;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #fff;
+    margin-top: 1px; /* pour creer un espace entre les deux blocs */
+}
+
+.panier p{
+    margin-left: 10px;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.logo p{
+    color: rgb(255, 113, 198);
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+
+.logo{
+    display: flex;
+    margin-top: 2px;
+}
+
+.logo_img{
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.logo_img img{
+    transition: ease-out 3s;
+}
+
+.logo_img img:hover{
+    transform: rotate(360deg);
+}
+
+.features{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 32%;
+    box-shadow: 4px 1px 5px lightgrey;
+}
+
+.features h4{
+    text-align: center;
+    background-color: lightgray;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 7px;
+}
+
+.product p{
+    width: 70%;
+    text-align: justify;
+}
+
+.link{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.link a{
+    color: rgb(103, 220, 255);
+    font-weight: bold;
+}
+
+p.txt_robe{
+    width: 75%;
+}
+
+.nav_footer{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav_footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer{
+    background-color: rgb(103, 220, 255);
+    margin-top: 15px;
+    padding: 8px;
+}
+
+ul.nav_footer li{
+    margin-left: 5px;
+}
+
+.menu_haut li:hover{ /* lorsque la souris passe au dessus de l'élément */
+    background-color: rgb(255, 113, 198);
+    transition: ease-out 0.2s; /* Les transisitions pour raffiner un peu les animations */
+}
