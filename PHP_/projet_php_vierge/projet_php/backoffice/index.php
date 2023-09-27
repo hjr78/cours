@@ -110,7 +110,7 @@ require_once('lib/select_product.php'); // requête SQL SELECT de la table produ
 
             <!-- Création d'un produit -->
             <li class="nav-item">
-                <a class="nav-link" href="../backoffice/form/form_produit.php">
+                <a class="nav-link" href="../backoffice/creation_produit.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Créer un produit</span></a>
             </li>
@@ -304,16 +304,11 @@ require_once('lib/select_product.php'); // requête SQL SELECT de la table produ
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['firstname']." ".$_SESSION['lastname'];?></span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
-                            </a>
+                           <?php include_once('composant/avatar.php')?>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./profil.php">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -349,8 +344,9 @@ require_once('lib/select_product.php'); // requête SQL SELECT de la table produ
 
                     <div class="row">
                         <!-- PRODUIT -->
-
-                        <?php foreach ($product as $key => $value) {
+                        
+                        <?php foreach ($products as $key) {
+                            
                          ?>
 
                           <div class="col-xl-3 col-md-6 mb-4">
@@ -359,16 +355,19 @@ require_once('lib/select_product.php'); // requête SQL SELECT de la table produ
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                              Créateur : <?php echo $product[$key]['firstname']; ?></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $product[$key]['title'];?></div>
+                                              Créateur : <?php echo $key['firstname']; ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $key['title'];?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <?php echo $product[$key]['price'];?>
+                                            <?php echo $key['price'];?>
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
+                                   <a style="font-size:15px;" class="text-xs font-weight-bold text-success text-uppercase mb-1" href="modifier_produit.php?idproduct=<?php echo $key['id_product']; ?>">Modifier le produit</a> <br>
+                                    <a style="font-size:15px;" class="text-xs font-weight-bold text-danger text-uppercase mb-1" href="lib/supprimer.php?idproduct=<?php echo $key['id_product']; ?>">Supprimer le produit</a> 
                             </div>
+                            
                         </div>
 
 
@@ -707,7 +706,7 @@ require_once('lib/select_product.php'); // requête SQL SELECT de la table produ
 
             </div>
             <!-- End of Main Content -->
-
+            
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">

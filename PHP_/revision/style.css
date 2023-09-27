@@ -1,0 +1,71 @@
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le titre */
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styles pour la liste des produits */
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Style pour l'image du produit */
+img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Ligne de séparation entre les produits */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Message pour aucun produit trouvé */
+.no-products {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
