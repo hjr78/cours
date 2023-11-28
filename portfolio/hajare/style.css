@@ -303,9 +303,6 @@ a img.aligncenter {
     HEADER
 -------------------------------------------------------------------*/
 
-.navbar-dark{
-	
-}
 
 .navbar-dark .navbar-nav .nav-link{
 	color: #ffffff;
@@ -346,6 +343,10 @@ a img.aligncenter {
 .main-banner{
 	height: 100%;
 	position: relative;
+    background: url('images/fond multimedia.jpg')!important;
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
 }
 
 .main-banner{
@@ -802,6 +803,53 @@ xclip
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+
+
+
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+.work-box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+.work-img img {
+  transition: all 1s;
+  height: 180px;
+  object-fit: cover;
+}
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+.work-content .w-more {
+  color: #4E4E4E;
+  font-size: .8rem;
+}
+.work-content .w-more .w-ctegory {
+  color: #000000;
+}
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #000000;
+  float: right;
+}
+.work-content .w-like a {
+  color: #000000;
+}
+.work-content .w-like .num-like {
+  font-size: .7rem;
+}
+.w-title {
+  font-size: 1.2rem;
 }
 
 
@@ -1440,10 +1488,7 @@ hr.invis1 {
 	padding: 12px 25px;
 	border: none;
 	border-radius: 0px;
-}
-.filter-button-group button:nth-child(1) {
-    /* width: 100%; */
-
+    width: 100%;
 }
 
 
@@ -2106,7 +2151,9 @@ select.mobile-device {
 	top: 100%;
 	left: 0px;
 }
-
+#sendMessageButton {
+    background: #fff!important;
+}
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
@@ -2134,7 +2181,6 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
 }
 
 .footer {
@@ -2380,7 +2426,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2389,7 +2435,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
@@ -2471,4 +2517,14 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+}
+img.img1{
+    width: 350px;
+    height: 210px;
+
+}
+@media (max-width: 1050px) {
+    .filter-button-group {
+        flex-direction: column;
+    }
 }

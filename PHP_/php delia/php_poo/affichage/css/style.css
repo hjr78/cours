@@ -1,0 +1,49 @@
+ body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar .nav-item a {
+            color: white;
+        }
+
+        h1 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            margin-bottom: 20px;
+            margin-left: 10%; /* Ajusté pour centrer le tableau */
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #555;
+        }
+
+        .action-buttons button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }

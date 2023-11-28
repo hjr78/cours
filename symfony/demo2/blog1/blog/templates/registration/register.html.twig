@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <h1>Register</h1>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+        <div class="row">
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Firstname :</label>
+                
+                {{ form_row(registrationForm.firstname,{'attr':{'class': 'form-control','placeholder':'Saisir votre prenom'}}) }}
+            </div>
+        </div>
+
+        <div class="row">
+	        <div class="col-md-4">
+		    <label for="validationCustom01" class="form-label">Lastname :</label>
+
+            {{form_row(registrationForm.lastname,{'attr':{'class': 'form-control','placeholder':'Saisir votre nom'}}) }}
+
+	        </div>
+        </div>
+
+        <div class="row">
+	        <div class="col-md-4">
+		    <label for="validationCustom01" class="form-label">Tel :</label>
+
+            {{form_row(registrationForm.tel,{'attr':{'class': 'form-control','placeholder':'Saisir votre numéro de téléphone'}}) }}
+
+	        </div>
+        </div>
+
+
+        <div class="row">
+	        <div class="col-md-4">
+		    <label for="validationCustom01" class="form-label">Email :</label>
+
+            {{form_row(registrationForm.email,{'attr':{'class': 'form-control','placeholder':'Saisir votre email'}}) }}
+
+
+	        </div>
+        </div>
+
+
+<div class="row">
+	<div class="col-md-4">
+		<label for="validationCustom01" class="form-label"></label>
+
+        {{form_row(registrationForm.plainPassword,{'attr':{'class': 'form-control','placeholder':'Saisir votre mot de passe'}}) 
+        
+        }}
+
+	</div>
+</div>
+
+
+        {{ form_row(registrationForm.agreeTerms) }}
+
+
+        <button type="submit" class="btn">Je crée mon compte</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		</head>
+		<body>
+			{% block header %}
+
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">Home</a>
+								<a class="nav-link" href="{{ path('app_article_index') }}">Article</a>
+								<a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+							</div>
+						</div>
+					</div>
+			{% if app.user == null %}
+				<button type="button" class="btn btn-outline-info">
+					<a href="{{ path('app_login') }}">Se connecter</a>
+				</button>
+				<button type="button" class="btn btn-outline-info">
+					<a href="{{ path('app_register') }}">S'inscrire</a>
+				</button>
+			{% endif %}
+			{% if app.user %}
+				Bonjour,
+				{{app.user}}
+				
+				<a class="deco" href="{{ path('app_logout') }}">Se deconnecter</a>
+			{% endif %}
+				</nav>
+
+			{% endblock %}
+
+
+			{% block body %}{% endblock %}
+
+
+			{% block footer %}
+
+			{% endblock %}
+
+
+		</body>
+	</html>

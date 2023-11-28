@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Article{% endblock %}
+
+{% block body %}
+    <h1>Article</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ article.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ article.titre }}</td>
+            </tr>
+            <tr>
+                <th>Resume</th>
+                <td>{{ article.resume }}</td>
+            </tr>
+            <tr>
+                <th>Contenu</th>
+                <td>{{ article.contenu }}</td>
+            </tr>
+            <tr>
+                <th>Auteur</th>
+                <td>{{ article.auteur }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                {# <td>{{ article.image }}</td> #}
+                 <td>
+                    <img width="20%" src="{{ asset('images/article/')}}{{ article.image }}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <hr>
+    <h4> Les commentaires  </h4>
+
+    <h4> Listing des commentaires   </h4>
+    {% for comment in comments %}
+        Posté par {{ comment.user }} le {{ comment.createdAt|date('Y-m-d H:i:s') }}
+        <p>{{ comment.contenu }} </p>
+    {% endfor %}
+
+
+    {{ include('comment/_form.html.twig') }}
+    <hr>
+    <hr>
+
+    <a href="{{ path('app_article_index') }}">back to list</a>
+
+    <a href="{{ path('app_article_edit', {'id': article.id}) }}">edit</a>
+
+    {{ include('article/_delete_form.html.twig') }}
+{% endblock %}

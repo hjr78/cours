@@ -1,0 +1,24 @@
+body {
+  background-color: #000;
+}
+body h1 {
+  color: aqua;
+}
+
+main {
+  background-color: pink;
+}
+main .text {
+  width: 250px;
+  background-color: green;
+}
+main .text p {
+  font-size: 20px;
+  color: greenyellow;
+}
+main .text h3 {
+  font-weight: bold;
+}
+main .text span {
+  background-color: aliceblue;
+}/*# sourceMappingURL=style.css.map */
